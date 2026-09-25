@@ -89,36 +89,56 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission Cards */}
-      <section className="py-20 border-t" style={{ backgroundColor:"var(--color-ivory)", borderColor:"var(--color-border-warm)" }}>
-        <div className="container-wide">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="py-20 relative overflow-hidden bg-white">
+        {/* Abstract Background Elements */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+          <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[var(--color-sage-light)]/20 blur-[100px]"></div>
+          <div className="absolute -bottom-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-[var(--color-secondary)]/10 blur-[100px]"></div>
+        </div>
+
+        <div className="container-wide relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Vision */}
-            <div className="card p-8 space-y-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor:"var(--color-primary)" }}>
-                <Eye className="w-6 h-6" />
+            <div className="group relative bg-[var(--color-ivory)] rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-primary)]/10 transition-all duration-500 overflow-hidden">
+              <div className="absolute -right-8 -top-8 text-[var(--color-primary)]/5 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700 pointer-events-none">
+                <Eye className="w-64 h-64" />
               </div>
-              <h3 className="font-serif text-2xl font-bold" style={{ color:"var(--color-primary-dark)" }}>Our Vision</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                To be the most trusted, benchmark mother and child healthcare institution in North Coastal Andhra Pradesh, recognized for medical innovation, zero preventable maternal/neonatal mortality, and ethical clinical care.
-              </p>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-[var(--color-ivory)] mb-8 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] shadow-lg shadow-[var(--color-primary)]/30 group-hover:-translate-y-1 transition-transform duration-300">
+                  <Eye className="w-7 h-7" />
+                </div>
+                <h3 className="font-serif text-3xl sm:text-4xl font-extrabold mb-5 text-[var(--color-primary-dark)] tracking-tight">Our Vision</h3>
+                <div className="w-12 h-1 bg-[var(--color-primary)]/30 mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
+                <p className="text-base text-slate-700 leading-relaxed font-medium">
+                  To be the most trusted, benchmark mother and child healthcare institution in North Coastal Andhra Pradesh, recognized for medical innovation, zero preventable maternal/neonatal mortality, and ethical clinical care.
+                </p>
+              </div>
             </div>
 
             {/* Mission */}
-            <div className="card p-8 space-y-4">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-white" style={{ backgroundColor:"var(--color-secondary)" }}>
-                <Target className="w-6 h-6" />
+            <div className="group relative bg-[var(--color-ivory)] rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-secondary)]/10 transition-all duration-500 overflow-hidden">
+              <div className="absolute -right-8 -top-8 text-[var(--color-secondary)]/5 transform group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-700 pointer-events-none">
+                <Target className="w-64 h-64" />
               </div>
-              <h3 className="font-serif text-2xl font-bold" style={{ color:"var(--color-primary-dark)" }}>Our Mission</h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
-                To provide accessible, 24/7 advanced obstetrics and neonatology with medical rigor, warmth, and transparent patient communication, ensuring every mother and newborn experiences safe, dignified, and world-class healthcare.
-              </p>
+              
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-8 bg-gradient-to-br from-[var(--color-secondary)] to-[#C0696E] shadow-lg shadow-[var(--color-secondary)]/30 group-hover:-translate-y-1 transition-transform duration-300">
+                  <Target className="w-7 h-7" />
+                </div>
+                <h3 className="font-serif text-3xl sm:text-4xl font-extrabold mb-5 text-[var(--color-primary-dark)] tracking-tight">Our Mission</h3>
+                <div className="w-12 h-1 bg-[var(--color-secondary)]/30 mb-6 rounded-full group-hover:w-20 transition-all duration-300"></div>
+                <p className="text-base text-slate-700 leading-relaxed font-medium">
+                  To provide accessible, 24/7 advanced obstetrics and neonatology with medical rigor, warmth, and transparent patient communication, ensuring every mother and newborn experiences safe, dignified, and world-class healthcare.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Core Values */}
-      <section className="py-20 bg-white border-t" style={{ borderColor:"var(--color-border-warm)" }}>
+      <section className="py-20 bg-white">
         <div className="container-wide">
           <div className="text-center max-w-xl mx-auto mb-14 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color:"var(--color-primary)" }}>Our Guiding Principles</span>
