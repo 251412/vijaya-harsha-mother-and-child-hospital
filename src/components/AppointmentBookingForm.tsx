@@ -276,9 +276,12 @@ export default function AppointmentBookingForm({
   const activeDoctor = DOCTORS.find((d) => d.id === selectedDoctorId);
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-xl space-y-6">
+    <form onSubmit={handleSubmit} className="bg-white rounded-[2rem] p-8 sm:p-12 border border-[var(--color-border-warm)] shadow-2xl shadow-[var(--color-primary)]/5 space-y-8 relative overflow-hidden">
+      {/* Decorative background element */}
+      <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-[var(--color-sage-light)]/30 rounded-full blur-3xl pointer-events-none"></div>
+      
       {serverError && (
-        <div className="p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs flex items-start gap-2 animate-fadeIn">
+        <div className="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 text-xs flex items-start gap-2 animate-fadeIn">
           <AlertCircle className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
           <div>
             <strong className="block font-bold">Submission Error</strong>
@@ -288,11 +291,15 @@ export default function AppointmentBookingForm({
       )}
 
       {/* Patient Information Section */}
-      <div>
-        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-1.5">
-          <User className="w-3.5 h-3.5 text-[#0284C7]" />
-          <span>Patient Contact Details</span>
-        </h4>
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-8 h-8 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary-dark)] flex items-center justify-center">
+            <User className="w-4 h-4" />
+          </div>
+          <h4 className="text-sm font-bold uppercase tracking-widest text-[var(--color-primary-dark)]">
+            Patient Details
+          </h4>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {/* Patient Name */}
@@ -309,13 +316,13 @@ export default function AppointmentBookingForm({
                   if (fieldErrors.patientName) setFieldErrors({ ...fieldErrors, patientName: "" });
                 }}
                 placeholder="Full Name"
-                className={`w-full px-3.5 py-2.5 rounded-xl border text-xs sm:text-sm focus:outline-none transition-colors ${
-                  fieldErrors.patientName ? "border-rose-400 bg-rose-50/20" : "border-slate-200 focus:border-[#0284C7]"
+                className={`w-full px-4 py-3.5 rounded-2xl border text-sm focus:outline-none transition-all duration-300 ${
+                  fieldErrors.patientName ? "border-rose-400 bg-rose-50/50" : "bg-slate-50/50 border-slate-200 focus:bg-white focus:border-[var(--color-primary)] focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)]"
                 }`}
               />
             </div>
             {fieldErrors.patientName && (
-              <p className="text-[11px] text-rose-500 mt-1">{fieldErrors.patientName}</p>
+              <p className="text-[11px] text-rose-500 mt-1.5 font-medium">{fieldErrors.patientName}</p>
             )}
           </div>
 
@@ -333,13 +340,13 @@ export default function AppointmentBookingForm({
                   if (fieldErrors.patientEmail) setFieldErrors({ ...fieldErrors, patientEmail: "" });
                 }}
                 placeholder="patient@example.com"
-                className={`w-full px-3.5 py-2.5 rounded-xl border text-xs sm:text-sm focus:outline-none transition-colors ${
-                  fieldErrors.patientEmail ? "border-rose-400 bg-rose-50/20" : "border-slate-200 focus:border-[#0284C7]"
+                className={`w-full px-4 py-3.5 rounded-2xl border text-sm focus:outline-none transition-all duration-300 ${
+                  fieldErrors.patientEmail ? "border-rose-400 bg-rose-50/50" : "bg-slate-50/50 border-slate-200 focus:bg-white focus:border-[var(--color-primary)] focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)]"
                 }`}
               />
             </div>
             {fieldErrors.patientEmail && (
-              <p className="text-[11px] text-rose-500 mt-1">{fieldErrors.patientEmail}</p>
+              <p className="text-[11px] text-rose-500 mt-1.5 font-medium">{fieldErrors.patientEmail}</p>
             )}
           </div>
 
@@ -358,24 +365,30 @@ export default function AppointmentBookingForm({
                 }}
                 placeholder="9876543210"
                 maxLength={13}
-                className={`w-full px-3.5 py-2.5 rounded-xl border text-xs sm:text-sm focus:outline-none transition-colors ${
-                  fieldErrors.patientPhone ? "border-rose-400 bg-rose-50/20" : "border-slate-200 focus:border-[#0284C7]"
+                className={`w-full px-4 py-3.5 rounded-2xl border text-sm focus:outline-none transition-all duration-300 ${
+                  fieldErrors.patientPhone ? "border-rose-400 bg-rose-50/50" : "bg-slate-50/50 border-slate-200 focus:bg-white focus:border-[var(--color-primary)] focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)]"
                 }`}
               />
             </div>
             {fieldErrors.patientPhone && (
-              <p className="text-[11px] text-rose-500 mt-1">{fieldErrors.patientPhone}</p>
+              <p className="text-[11px] text-rose-500 mt-1.5 font-medium">{fieldErrors.patientPhone}</p>
             )}
           </div>
         </div>
       </div>
 
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-slate-200 to-transparent my-2" />
+
       {/* Doctor & Department Section */}
-      <div>
-        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-1.5">
-          <Stethoscope className="w-3.5 h-3.5 text-[#0284C7]" />
-          <span>Doctor & Clinical Department</span>
-        </h4>
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-8 h-8 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary-dark)] flex items-center justify-center">
+            <Stethoscope className="w-4 h-4" />
+          </div>
+          <h4 className="text-sm font-bold uppercase tracking-widest text-[var(--color-primary-dark)]">
+            Clinical Consultation
+          </h4>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Doctor Selection */}
@@ -386,7 +399,7 @@ export default function AppointmentBookingForm({
             <select
               value={selectedDoctorId}
               onChange={(e) => handleDoctorChange(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:border-[#0284C7] focus:outline-none bg-white"
+              className="w-full px-4 py-3.5 rounded-2xl border border-slate-200 text-sm focus:border-[var(--color-primary)] focus:outline-none bg-slate-50/50 focus:bg-white focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)] transition-all duration-300"
             >
               {DOCTORS.map((doc) => (
                 <option key={doc.id} value={doc.id}>
@@ -395,7 +408,7 @@ export default function AppointmentBookingForm({
               ))}
             </select>
             {activeDoctor && (
-              <p className="text-[11px] text-[#0284C7] mt-1 font-medium">
+              <p className="text-[11px] text-[var(--color-primary)] mt-1.5 font-medium">
                 Timings: {activeDoctor.consultationTimings} ({activeDoctor.consultationDays.slice(0, 3).join(", ")}...)
               </p>
             )}
@@ -409,7 +422,8 @@ export default function AppointmentBookingForm({
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:border-[#0284C7] focus:outline-none bg-white"
+              onChange={(e) => setDepartment(e.target.value)}
+              className="w-full px-4 py-3.5 rounded-2xl border border-slate-200 text-sm focus:border-[var(--color-primary)] focus:outline-none bg-slate-50/50 focus:bg-white focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)] transition-all duration-300"
             >
               {DEPARTMENTS.map((dept) => (
                 <option key={dept} value={dept}>
@@ -421,12 +435,18 @@ export default function AppointmentBookingForm({
         </div>
       </div>
 
+      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-slate-200 to-transparent my-2" />
+
       {/* Date & Time Slot Section */}
-      <div>
-        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-1.5">
-          <Calendar className="w-3.5 h-3.5 text-[#0284C7]" />
-          <span>Preferred Date & Convenient Slot</span>
-        </h4>
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="w-8 h-8 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary-dark)] flex items-center justify-center">
+            <Calendar className="w-4 h-4" />
+          </div>
+          <h4 className="text-sm font-bold uppercase tracking-widest text-[var(--color-primary-dark)]">
+            Schedule
+          </h4>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {/* Date Picker */}
@@ -442,12 +462,12 @@ export default function AppointmentBookingForm({
                 setPreferredDate(e.target.value);
                 if (fieldErrors.preferredDate) setFieldErrors({ ...fieldErrors, preferredDate: "" });
               }}
-              className={`w-full px-3.5 py-2.5 rounded-xl border text-xs sm:text-sm focus:outline-none ${
-                fieldErrors.preferredDate ? "border-rose-400 bg-rose-50/20" : "border-slate-200 focus:border-[#0284C7]"
+              className={`w-full px-4 py-3.5 rounded-2xl border text-sm focus:outline-none transition-all duration-300 ${
+                fieldErrors.preferredDate ? "border-rose-400 bg-rose-50/50" : "bg-slate-50/50 border-slate-200 focus:bg-white focus:border-[var(--color-primary)] focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)]"
               }`}
             />
             {fieldErrors.preferredDate && (
-              <p className="text-[11px] text-rose-500 mt-1">{fieldErrors.preferredDate}</p>
+              <p className="text-[11px] text-rose-500 mt-1.5 font-medium">{fieldErrors.preferredDate}</p>
             )}
           </div>
 
@@ -459,7 +479,8 @@ export default function AppointmentBookingForm({
             <select
               value={preferredTime}
               onChange={(e) => setPreferredTime(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-xs sm:text-sm focus:border-[#0284C7] focus:outline-none bg-white"
+              onChange={(e) => setPreferredTime(e.target.value)}
+              className="w-full px-4 py-3.5 rounded-2xl border border-slate-200 text-sm focus:border-[var(--color-primary)] focus:outline-none bg-slate-50/50 focus:bg-white focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)] transition-all duration-300"
             >
               {TIME_SLOTS.map((slot) => (
                 <option key={slot} value={slot}>
@@ -472,8 +493,8 @@ export default function AppointmentBookingForm({
       </div>
 
       {/* Reason for Visit */}
-      <div>
-        <label className="block text-xs font-semibold text-slate-700 mb-1.5">
+      <div className="relative z-10">
+        <label className="block text-xs font-semibold text-slate-700 mb-2">
           Reason for Visit / Symptoms <span className="text-rose-500">*</span>
         </label>
         <textarea
@@ -484,37 +505,37 @@ export default function AppointmentBookingForm({
             if (fieldErrors.reason) setFieldErrors({ ...fieldErrors, reason: "" });
           }}
           placeholder="Briefly describe symptoms, pregnancy trimester, or child's health concern..."
-          className={`w-full p-3 rounded-xl border text-xs sm:text-sm focus:outline-none resize-none ${
-            fieldErrors.reason ? "border-rose-400 bg-rose-50/20" : "border-slate-200 focus:border-[#0284C7]"
+          className={`w-full p-4 rounded-2xl border text-sm focus:outline-none resize-none transition-all duration-300 ${
+            fieldErrors.reason ? "border-rose-400 bg-rose-50/50" : "bg-slate-50/50 border-slate-200 focus:bg-white focus:border-[var(--color-primary)] focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)]"
           }`}
         />
         {fieldErrors.reason && (
-          <p className="text-[11px] text-rose-500 mt-1">{fieldErrors.reason}</p>
+          <p className="text-[11px] text-rose-500 mt-1.5 font-medium">{fieldErrors.reason}</p>
         )}
       </div>
 
       {/* Submit Button */}
-      <div>
+      <div className="pt-4 relative z-10">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3.5 px-6 rounded-2xl bg-[#0A2540] hover:bg-[#07192C] text-white font-bold text-sm shadow-xl shadow-slate-900/10 hover:shadow-2xl transition-all flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer disabled:cursor-not-allowed"
+          className="w-full py-4 px-8 rounded-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] hover:shadow-xl hover:shadow-[var(--color-primary)]/20 hover:-translate-y-0.5 text-white font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:hover:translate-y-0 cursor-pointer disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
             <>
-              <Loader2 className="w-5 h-5 animate-spin text-sky-400" />
-              <span>Registering Appointment & Notifying Medical Team...</span>
+              <Loader2 className="w-5 h-5 animate-spin text-[var(--color-ivory)]" />
+              <span>Registering Appointment...</span>
             </>
           ) : (
             <>
-              <Calendar className="w-4 h-4 text-sky-300" />
-              <span>Confirm & Book Appointment</span>
-              <ChevronRight className="w-4 h-4 ml-1 text-slate-300" />
+              <span>CONFIRM & BOOK APPOINTMENT</span>
+              <ChevronRight className="w-4 h-4 ml-1 opacity-80 group-hover:translate-x-1 transition-transform" />
             </>
           )}
         </button>
-        <p className="text-[11px] text-slate-400 text-center mt-2.5">
-          🔒 Secure submission • Status updates and doctor confirmation will be sent to your email.
+        <p className="text-xs text-slate-400 text-center mt-4 flex items-center justify-center gap-1.5">
+          <ShieldCheck className="w-4 h-4 text-emerald-500" />
+          <span>Secure submission • Status updates will be sent to your email.</span>
         </p>
       </div>
     </form>

@@ -122,26 +122,26 @@ export default function Navbar() {
             borderBottom: `1px solid ${scrolled ?"var(--color-border)" :"var(--color-border-light)"}`,
           }}
         >
-          <div className="container-wide flex items-center justify-between gap-4">
+          <div className="container-wide flex items-center justify-between gap-2 sm:gap-4">
 
             {/* Brand Logo */}
             <Link
               href="/"
-              className="flex items-center gap-3 group flex-shrink-0 focus:outline-none"
+              className="flex items-center gap-2 sm:gap-3 group min-w-0 focus:outline-none"
             >
               <Image
                 src="/images/logo.png"
                 alt="Vijaya Harsha Mother & Child Hospital Logo"
                 width={52}
                 height={52}
-                className="w-11 h-11 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+                className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex-shrink-0 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
                 priority
               />
-              <div className="flex flex-col leading-none">
-                <span className="text-[15px] md:text-[16px] font-extrabold tracking-tight" style={{ color:"var(--color-text)" }}>
+              <div className="flex flex-col leading-none min-w-0">
+                <span className="text-[13px] sm:text-[15px] md:text-[16px] font-extrabold tracking-tight truncate" style={{ color:"var(--color-text)" }}>
                   VIJAYA HARSHA
                 </span>
-                <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-widest mt-0.5" style={{ color:"var(--color-primary)" }}>
+                <span className="text-[8px] sm:text-[10px] md:text-[11px] font-bold uppercase tracking-widest mt-0.5 truncate" style={{ color:"var(--color-primary)" }}>
                   Mother &amp; Child Hospital
                 </span>
               </div>
@@ -221,34 +221,34 @@ export default function Navbar() {
             </div>
 
             {/* Mobile Controls */}
-            <div className="flex items-center gap-1.5 xl:hidden">
+            <div className="flex items-center gap-1 sm:gap-1.5 xl:hidden flex-shrink-0">
               <button
                 type="button"
                 onClick={() => setSearchOpen(true)}
                 aria-label="Open search"
-                className="p-2 rounded-lg transition-colors"
+                className="p-1.5 sm:p-2 rounded-lg transition-colors"
                 style={{ color:"var(--color-text-secondary)" }}
               >
-                <Search className="w-4 h-4" />
+                <Search className="w-4 h-4 sm:w-4 sm:h-4" />
               </button>
 
               <Link
                 href="/emergency"
                 aria-label="Emergency"
-                className="p-2 rounded-lg"
+                className="p-1.5 sm:p-2 rounded-lg"
                 style={{
                   backgroundColor:"var(--color-emergency-light)",
                   color:"var(--color-emergency)",
                 }}
               >
-                <AlertCircle className="w-4 h-4" />
+                <AlertCircle className="w-4 h-4 sm:w-4 sm:h-4" />
               </Link>
 
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
-                className="p-2 rounded-lg transition-colors"
+                className="p-1.5 sm:p-2 rounded-lg transition-colors"
                 style={{ color:"var(--color-text)" }}
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
