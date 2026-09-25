@@ -78,10 +78,10 @@ export default function SattvaGarbhasanskarPage() {
             <ScrollReveal animation="slideRight">
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-square">
                 <Image
-                  src="https://images.unsplash.com/photo-1517650862521-d580d5348145?auto=format&fit=crop&q=80&w=1000"
-                  alt="Pregnancy Yoga and Mindfulness"
+                  src="/images/sattva-logo-full.png"
+                  alt="Sattva Garbhasanskar Clinic"
                   fill
-                  className="object-cover"
+                  className="object-contain p-8 bg-white"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
@@ -97,18 +97,18 @@ export default function SattvaGarbhasanskarPage() {
                 />
                 <div className="text-text-secondary space-y-4 text-base md:text-lg leading-relaxed">
                   <p>
-                    [Placeholder] Garbhasanskar is an ancient Ayurvedic practice that focuses on the mental, physical, and spiritual well-being of the mother and the fetus. We believe that a mother's state of mind directly influences the baby's development.
+                    Garbhasanskar is an ancient Ayurvedic practice that focuses on the mental, physical, and spiritual well-being of the mother and the fetus. We believe that a mother's state of mind directly influences the baby's development.
                   </p>
                   <p>
-                    [Placeholder] At Vijaya Harsha Mother & Child Hospital, our Sattva Garbhasanskar program integrates traditional wisdom with modern medical science. Through tailored activities, we help you create a serene environment that fosters healthy brain development and emotional balance in your unborn child.
+                    At Vijaya Harsha Mother & Child Hospital, our Sattva Garbhasanskar program integrates traditional wisdom with modern medical science. Through tailored activities, we help you create a serene environment that fosters healthy brain development and emotional balance in your unborn child.
                   </p>
                 </div>
                 
                 <ul className="space-y-3 pt-4">
                   {[
-                    "[Placeholder] Reduces pregnancy-related stress and anxiety",
-                    "[Placeholder] Promotes healthy fetal development",
-                    "[Placeholder] Prepares the body and mind for a positive birthing experience",
+                    "Reduces pregnancy-related stress and anxiety",
+                    "Promotes healthy fetal development",
+                    "Prepares the body and mind for a positive birthing experience",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <div className="mt-1 w-6 h-6 rounded-full bg-success-light flex items-center justify-center flex-shrink-0">
@@ -161,8 +161,8 @@ export default function SattvaGarbhasanskarPage() {
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 tracking-tight">
               Begin Your Mindful Journey Today
             </h2>
-            <p className="text-lg text-primary-light max-w-2xl mx-auto mb-10">
-              [Placeholder] Experience the profound benefits of Sattva Garbhasanskar. Reach out to our team to learn more about session schedules and enrollment.
+            <p className="text-lg max-w-2xl mx-auto mb-10" style={{ color: "rgba(255, 255, 255, 0.9)" }}>
+              Experience the profound benefits of Sattva Garbhasanskar. Reach out to our team to learn more about session schedules and enrollment.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact" className="btn-secondary group inline-flex items-center justify-center px-8 py-4 text-[15px] bg-white hover:bg-slate-50" style={{ color: "var(--color-primary)" }}>

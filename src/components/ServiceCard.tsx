@@ -15,12 +15,10 @@ export default function ServiceCard({ service, featured = false }: ServiceCardPr
   return (
     <div
       id={service.slug}
-      className={`flex flex-col rounded-2xl overflow-hidden h-full group card-hover ${
-        featured ? "border-2" : ""
-      }`}
+      className="flex flex-col rounded-2xl overflow-hidden h-full group card-hover border-2"
       style={{
         backgroundColor: "var(--color-card)",
-        borderColor: featured ? "var(--color-primary)" : "var(--color-border-warm)",
+        borderColor: "var(--color-primary)",
       }}
     >
       {/* Image with zoom */}

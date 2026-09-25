@@ -96,7 +96,7 @@ export default function HomePage() {
                 <div className="relative w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] sm:aspect-square lg:aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
                   {/* Subtle zoom animation via CSS class */}
                   <Image
-                    src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200"
+                    src="/images/hero-mom-baby.png"
                     alt="Compassionate Maternity Care at Vijaya Harsha"
                     fill
                     className="object-cover object-center animate-slowZoom"
@@ -356,7 +356,7 @@ export default function HomePage() {
 
           <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto">
             {DOCTORS.slice(0, 2).map((doc, idx) => (
-              <ScrollReveal key={doc.id} animation="scaleUp" delay={idx * 0.15}>
+              <ScrollReveal key={doc.id} animation="scaleUp" delay={idx * 0.15} className="h-full">
                 <DoctorCard doctor={doc} featured />
               </ScrollReveal>
             ))}

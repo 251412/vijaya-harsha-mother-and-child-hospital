@@ -88,7 +88,7 @@ export const DOCTORS: DoctorData[] = [
     department: "Obstetrics & Gynecology",
     experienceYears: 18,
     bio: "Dr. K. Harsha Latha is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
-    photoUrl: "https://images.unsplash.com/photo-1594824813583-05995543c7b5?auto=format&fit=crop&q=80&w=800",
+    photoUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
     consultationDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     consultationTimings: "10:00 AM - 02:00 PM & 05:00 PM - 08:30 PM",
     isAvailableForBooking: true,

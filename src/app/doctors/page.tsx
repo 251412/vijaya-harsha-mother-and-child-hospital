@@ -112,7 +112,7 @@ export default function DoctorsPage() {
           ) : (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {filteredDoctors.map((doc, idx) => (
-                <div key={doc.id} id={doc.slug}>
+                <div key={doc.id} id={doc.slug} className="h-full">
                   <DoctorCard doctor={doc} featured={idx < 2} />
                 </div>
               ))}
