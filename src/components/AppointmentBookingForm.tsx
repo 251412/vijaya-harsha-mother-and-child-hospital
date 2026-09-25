@@ -422,7 +422,6 @@ export default function AppointmentBookingForm({
             <select
               value={department}
               onChange={(e) => setDepartment(e.target.value)}
-              onChange={(e) => setDepartment(e.target.value)}
               className="w-full px-4 py-3.5 rounded-2xl border border-slate-200 text-sm focus:border-[var(--color-primary)] focus:outline-none bg-slate-50/50 focus:bg-white focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)] transition-all duration-300"
             >
               {DEPARTMENTS.map((dept) => (
@@ -478,7 +477,6 @@ export default function AppointmentBookingForm({
             </label>
             <select
               value={preferredTime}
-              onChange={(e) => setPreferredTime(e.target.value)}
               onChange={(e) => setPreferredTime(e.target.value)}
               className="w-full px-4 py-3.5 rounded-2xl border border-slate-200 text-sm focus:border-[var(--color-primary)] focus:outline-none bg-slate-50/50 focus:bg-white focus:shadow-[0_0_0_4px_rgba(26,92,94,0.1)] transition-all duration-300"
             >
