@@ -30,7 +30,7 @@ export default function AboutPage() {
             <span>Our Heritage & Purpose</span>
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold tracking-tight text-white max-w-3xl">
-            About Vijaya Harsha Hospital
+            About VijayaHarsha Hospital
           </h1>
           <p className="text-sm sm:text-base max-w-2xl mt-3 leading-relaxed" style={{ color:"rgba(255, 255, 255, 0.85)" }}>
             A specialized healthcare haven in Srikakulam dedicated exclusively to maternal health, high-risk obstetrics, newborn intensive care, and child health excellence.
