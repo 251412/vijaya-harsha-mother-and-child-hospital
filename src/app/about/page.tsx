@@ -89,7 +89,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision & Mission Cards */}
-      <section className="py-20 relative overflow-hidden bg-white">
+      <section className="py-20 relative overflow-hidden bg-[var(--color-ivory)]">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[var(--color-sage-light)]/20 blur-[100px]"></div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="container-wide relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Vision */}
-            <div className="group relative bg-[var(--color-ivory)] rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-primary)]/10 transition-all duration-500 overflow-hidden">
+            <div className="group relative bg-white rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-primary)]/10 transition-all duration-500 overflow-hidden">
               <div className="absolute -right-8 -top-8 text-[var(--color-primary)]/5 transform group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700 pointer-events-none">
                 <Eye className="w-64 h-64" />
               </div>
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </div>
 
             {/* Mission */}
-            <div className="group relative bg-[var(--color-ivory)] rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-secondary)]/10 transition-all duration-500 overflow-hidden">
+            <div className="group relative bg-white rounded-[2rem] p-10 lg:p-12 border border-[var(--color-border-warm)] hover:shadow-2xl hover:shadow-[var(--color-secondary)]/10 transition-all duration-500 overflow-hidden">
               <div className="absolute -right-8 -top-8 text-[var(--color-secondary)]/5 transform group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-700 pointer-events-none">
                 <Target className="w-64 h-64" />
               </div>
