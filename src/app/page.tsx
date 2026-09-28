@@ -266,7 +266,7 @@ export default function HomePage() {
               {
                 icon: <Award className="w-5 h-5" />,
                 title:"Senior Pediatric Expertise",
-                desc:"Dr. N. Vijaya Kumar: 22+ years of clinical excellence in child health.",
+                desc:"Dr. N. Vijaya Kumar: 25+ years of clinical excellence in child health.",
                 tint:"var(--color-champagne-light)",
                 accent:"var(--color-warning)",
               },

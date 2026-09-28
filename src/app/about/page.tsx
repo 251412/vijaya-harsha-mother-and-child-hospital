@@ -53,12 +53,12 @@ export default function AboutPage() {
                 Founded by <strong>Dr. N. Vijaya Kumar (Chief Pediatrician &amp; Neonatologist)</strong> and <strong>Dr. D. Harshavalli (Senior Obstetrician &amp; Laparoscopic Surgeon)</strong>, Vijaya Harsha Mother &amp; Child Hospital was conceived with a profound medical mission: to bring world-class tertiary maternal and neonatal intensive care to the families of Srikakulam and surrounding districts.
               </p>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Over the past 22 years, the hospital has served more than 65,000 families, nurtured over 5,200 critically ill and premature infants in its Level-III NICU, and safely delivered over 18,500 healthy babies through evidence-based, compassionate obstetric practices.
+                Over the past 25 years, the hospital has served more than 65,000 families, nurtured over 5,200 critically ill and premature infants in its Level-III NICU, and safely delivered over 18,500 healthy babies through evidence-based, compassionate obstetric practices.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <div className="p-4 rounded-2xl border" style={{ backgroundColor:"var(--color-ivory-dark)", borderColor:"var(--color-border-warm)" }}>
-                  <span className="text-2xl font-black block" style={{ color:"var(--color-primary)" }}>22+</span>
+                  <span className="text-2xl font-black block" style={{ color:"var(--color-primary)" }}>25+</span>
                   <span className="text-xs text-slate-600 font-semibold">Years Clinical Legacy</span>
                 </div>
                 <div className="p-4 rounded-2xl border" style={{ backgroundColor:"var(--color-ivory-dark)", borderColor:"var(--color-border-warm)" }}>
