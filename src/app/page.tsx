@@ -70,7 +70,7 @@ export default function HomePage() {
               {/* Supporting Text */}
               <ScrollReveal animation="slideUp" delay={0.5}>
                 <p className="text-base lg:text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed text-text-secondary">
-                  Advanced medical expertise meets compassionate care. Led by Dr. N. Vijaya Kumar and Dr. K. Harsha Latha, we provide a safe, warm, and highly specialized environment for you and your baby.
+                  Advanced medical expertise meets compassionate care. Led by Dr. N. Vijaya Kumar and Dr. D. Harshavalli, we provide a safe, warm, and highly specialized environment for you and your baby.
                 </p>
               </ScrollReveal>
 

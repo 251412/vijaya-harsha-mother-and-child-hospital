@@ -81,13 +81,13 @@ export const DOCTORS: DoctorData[] = [
   },
   {
     id: "doc-2",
-    name: "Dr. K. Harsha Latha",
-    slug: "dr-k-harsha-latha",
+    name: "Dr. D. Harshavalli",
+    slug: "dr-d-harshavalli",
     qualification: "MBBS, MS (OBG), FMAS, DNB",
     specialization: "Senior Obstetrician, Gynecologist & Laparoscopic Surgeon",
     department: "Obstetrics & Gynecology",
     experienceYears: 18,
-    bio: "Dr. K. Harsha Latha is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
+    bio: "Dr. D. Harshavalli is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
     photoUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
     consultationDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     consultationTimings: "10:00 AM - 02:00 PM & 05:00 PM - 08:30 PM",
@@ -199,7 +199,7 @@ export const SERVICES: ServiceData[] = [
     slug: "high-risk-pregnancy",
     category: "Maternity",
     shortDescription: "Specialized clinical protocols for maternal hypertension, gestational diabetes, twins/triplets, and recurrent pregnancy loss.",
-    fullDescription: "High-risk pregnancies require experienced vigilance. Dr. K. Harsha Latha and Dr. P. Sridevi work closely to detect maternal and fetal complications early, implementing personalized management plans that safely bring both mother and baby through delivery.",
+    fullDescription: "High-risk pregnancies require experienced vigilance. Dr. D. Harshavalli and Dr. P. Sridevi work closely to detect maternal and fetal complications early, implementing personalized management plans that safely bring both mother and baby through delivery.",
     iconName: "Activity",
     benefits: [
       "Comprehensive screening for preeclampsia and gestational diabetes",
@@ -267,7 +267,7 @@ export const BLOG_POSTS: BlogPostData[] = [
     title: "Essential Warning Signs During Pregnancy: When to Seek Immediate Emergency Care",
     slug: "warning-signs-during-pregnancy",
     category: "Pregnancy Care",
-    authorName: "Dr. K. Harsha Latha",
+    authorName: "Dr. D. Harshavalli",
     authorRole: "Senior Obstetrician & Gynecologist",
     publishedAt: "March 15, 2026",
     readTime: "5 min read",
@@ -452,7 +452,7 @@ export const FAQS = [
   },
   {
     q: "Can I consult for painless normal delivery?",
-    a: "Yes. Dr. K. Harsha Latha and our senior obstetric anesthesia team specialize in labor analgesia (epidural painless delivery), guiding mothers through safe, comfortable deliveries."
+    a: "Yes. Dr. D. Harshavalli and our senior obstetric anesthesia team specialize in labor analgesia (epidural painless delivery), guiding mothers through safe, comfortable deliveries."
   },
   {
     q: "Where is the hospital located in Srikakulam?",

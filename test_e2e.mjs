@@ -89,7 +89,7 @@ async function runE2E() {
       patientEmail: "venkat.k@example.com",
       patientPhone: "9440191244",
       doctorId: "doc-2",
-      doctorName: "Dr. K. Harsha Latha",
+      doctorName: "Dr. D. Harshavalli",
       department: "Obstetrics & Gynecology",
       preferredDate: "2026-11-10",
       preferredTime: "05:30 PM - 06:00 PM",
