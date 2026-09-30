@@ -49,7 +49,7 @@ export const HOSPITAL_CONFIG = {
     { label: "Safe Deliveries Conducted", value: "18,500+" },
     { label: "NICU Babies Successfully Nurtured", value: "5,200+" },
     { label: "Pediatric Consultations", value: "65,000+" },
-    { label: "Expert Doctors & Specialists", value: "12+" },
+    { label: "Expert Doctors & Specialists", value: "10+" },
     { label: "Dedicated ICU & Hospital Beds", value: "50+" },
     { label: "Patient Satisfaction Rate", value: "99.4%" }
   ],
