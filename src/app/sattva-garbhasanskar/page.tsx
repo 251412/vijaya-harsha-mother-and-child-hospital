@@ -71,13 +71,13 @@ export default function SattvaGarbhasanskarPage() {
                   Dr. D. Harshavalli
                 </h2>
                 <p className="text-lg font-bold text-[var(--color-primary)] mb-6">
-                  Gynecologist<br />
+                  M.D. (OBG), Obstetrics & Gynaecology<br />
                   <span className="text-slate-500 text-base font-medium">Vijaya Harsha Mother & Child Hospital, Srikakulam</span>
                 </p>
                 
                 <div className="text-[var(--color-text-secondary)] space-y-4 text-base md:text-lg leading-relaxed font-serif italic border-l-4 border-[var(--color-primary-light)] pl-6">
                   <p>
-                    "Namaskaram, I am Dr. D. Harshavalli, Gynecologist at Vijaya Harsha Mother & Child Hospital, Srikakulam.
+                    "Namaskaram, I am Dr. D. Harshavalli, M.D. (OBG), Obstetrics & Gynaecology at Vijaya Harsha Mother & Child Hospital, Srikakulam.
                   </p>
                   <p>
                     Every parent desires for their child to be healthy, possess good values, be intelligent, maintain wonderful relationships with everyone, and reach great heights in life.
@@ -246,7 +246,7 @@ export default function SattvaGarbhasanskarPage() {
             <div className="flex flex-col items-center justify-center gap-2">
               <div className="w-12 h-[2px] bg-[var(--color-primary)] mb-3"></div>
               <p className="font-bold text-[var(--color-text)] uppercase tracking-widest text-sm">— Dr. D. Harshavalli</p>
-              <p className="text-sm text-slate-500 font-medium">Gynecologist<br/>Vijaya Harsha Mother & Child Hospital, Srikakulam</p>
+              <p className="text-sm text-slate-500 font-medium">M.D. (OBG), Obstetrics & Gynaecology<br/>Vijaya Harsha Mother & Child Hospital, Srikakulam</p>
             </div>
           </ScrollReveal>
         </div>

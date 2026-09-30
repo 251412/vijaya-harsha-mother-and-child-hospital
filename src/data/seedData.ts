@@ -84,7 +84,7 @@ export const DOCTORS: DoctorData[] = [
     name: "Dr. D. Harshavalli",
     slug: "dr-d-harshavalli",
     qualification: "M.D. (OBG), Obstetrics & Gynaecology",
-    specialization: "Senior Obstetrician, Gynecologist & Laparoscopic Surgeon",
+    specialization: "",
     department: "Obstetrics & Gynecology",
     experienceYears: 25,
     bio: "Dr. D. Harshavalli is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
