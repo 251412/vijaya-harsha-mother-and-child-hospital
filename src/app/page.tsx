@@ -271,6 +271,18 @@ export default function HomePage() {
               title="Why Families Trust Vijaya Harsha"
               description="Combining world-class medical equipment with deeply compassionate care for mothers, infants, and growing children."
             />
+            
+            <div className="flex justify-center mt-8 -mb-4">
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-[var(--color-border-warm)] group hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] transition-all duration-300 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[var(--color-secondary)]/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--color-secondary)]/10 text-[var(--color-secondary)] group-hover:scale-110 transition-transform duration-300 relative z-10">
+                  <Award className="w-4 h-4" />
+                </span>
+                <span className="text-sm font-bold tracking-wide uppercase text-[var(--color-primary-dark)] relative z-10">
+                  Established Since <span className="text-[var(--color-secondary)] text-base">{HOSPITAL_CONFIG.established}</span>
+                </span>
+              </div>
+            </div>
           </ScrollReveal>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
