@@ -187,13 +187,13 @@ export default function HomePage() {
             {/* Image — asymmetric with organic shape */}
             <ScrollReveal animation="slideLeft">
               <div className="relative">
-                <div className="relative rounded-3xl overflow-hidden aspect-[4/5] max-w-md mx-auto lg:mx-0 img-zoom" style={{ border:"1px solid var(--color-border-light)" }}>
+                <div className="relative rounded-3xl overflow-hidden aspect-[4/3] md:aspect-video w-full max-w-xl mx-auto lg:mx-0 img-zoom bg-[var(--color-ivory)] flex items-center justify-center" style={{ border:"1px solid var(--color-border-light)" }}>
                   <Image
-                    src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&q=80&w=800"
-                    alt="Newborn care at Vijaya Harsha Hospital"
+                    src="/images/doctor-baby-care.png"
+                    alt="Doctor caring for a newborn at Vijaya Harsha Hospital"
                     fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 40vw"
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     loading="lazy"
                   />
                 </div>
