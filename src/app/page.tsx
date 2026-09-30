@@ -230,7 +230,7 @@ export default function HomePage() {
                   <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <span className="text-xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-secondary)" }}>{HOSPITAL_CONFIG.experience}</span>
-                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">Experience</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">of Trusted Care</span>
                   </div>
 
                   <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(26,92,94,0.15)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>

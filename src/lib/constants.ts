@@ -5,7 +5,7 @@ export const HOSPITAL_CONFIG = {
   subtitle: "Specialized Obstetrics, Gynecology, Level-III NICU, & Comprehensive Pediatric Excellence",
   type: "Multispeciality Hospital",
   established: 2005,
-  experience: "25+ Years",
+  experience: "21+ Years",
   doctors: "10+",
   beds: 50,
   
