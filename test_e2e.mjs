@@ -14,7 +14,7 @@ async function runE2E() {
       patientEmail: "bhavani.g@example.com",
       patientPhone: "9876543210",
       doctorId: "doc-1",
-      doctorName: "Dr. N. Vijaya Kumar",
+      doctorName: "Dr.N.Vijaya Kumar",
       department: "Pediatrics & Neonatal Care",
       preferredDate: "2026-11-05",
       preferredTime: "10:00 AM - 10:30 AM",

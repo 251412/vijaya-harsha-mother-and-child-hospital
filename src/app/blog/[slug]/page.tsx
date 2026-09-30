@@ -172,7 +172,7 @@ export default async function BlogDetailPage({
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color:"var(--color-sage-light)" }}>Consult Our Specialists</span>
             <h3 className="font-serif text-xl sm:text-2xl font-bold">Have Questions About Your Child or Pregnancy?</h3>
             <p className="text-xs text-white opacity- max-w-md">
-              Book a direct consultation with Dr. N. Vijaya Kumar or Dr. Harsha Latha at Vijaya Harsha Hospital.
+              Book a direct consultation with Dr.N.Vijaya Kumar or Dr. Harsha Latha at Vijaya Harsha Hospital.
             </p>
           </div>
           <Link

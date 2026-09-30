@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Vijaya Harsha Mother & Child Hospital",
   },
   description:
-    "Leading Mother & Child Hospital in Srikakulam, AP. Specialized in Obstetrics, Painless Normal Delivery, Level-III NICU, Pediatric ICU, and Fetal Medicine under Dr. N. Vijaya Kumar & Dr. Harsha.",
+    "Leading Mother & Child Hospital in Srikakulam, AP. Specialized in Obstetrics, Painless Normal Delivery, Level-III NICU, Pediatric ICU, and Fetal Medicine under Dr.N.Vijaya Kumar & Dr. Harsha.",
   keywords: [
     "Vijaya Harsha Hospital",
     "Mother and Child Hospital Srikakulam",

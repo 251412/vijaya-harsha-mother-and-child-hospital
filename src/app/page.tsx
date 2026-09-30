@@ -70,7 +70,7 @@ export default function HomePage() {
               {/* Supporting Text */}
               <ScrollReveal animation="slideUp" delay={0.5}>
                 <p className="text-base lg:text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed text-text-secondary">
-                  Advanced medical expertise meets compassionate care. Led by Dr. N. Vijaya Kumar and Dr. D. Harshavalli, we provide a safe, warm, and highly specialized environment for you and your baby.
+                  Advanced medical expertise meets compassionate care. Led by Dr.N.Vijaya Kumar and Dr. D. Harshavalli, we provide a safe, warm, and highly specialized environment for you and your baby.
                 </p>
               </ScrollReveal>
 
@@ -208,16 +208,42 @@ export default function HomePage() {
             {/* Text — editorial feel */}
             <ScrollReveal animation="slideRight">
               <div className="space-y-5">
-                <span className="eyebrow">Our Purpose</span>
+                <span className="eyebrow">{HOSPITAL_CONFIG.type}</span>
                 <h2 style={{ fontFamily:"var(--font-serif)", color:"var(--color-text)" }}>
-                  Advanced Medical Care With a Human Heart
+                  {HOSPITAL_CONFIG.tagline}
                 </h2>
                 <p className="text-base sm:text-lg leading-relaxed" style={{ color:"var(--color-text-secondary)" }}>
-                  For over two decades, Vijaya Harsha Hospital has been Srikakulam&apos;s trusted destination for maternal and child health. We believe that medical precision and compassionate care are not opposing forces — they are complementary strengths that every family deserves.
+                  For over two decades, {HOSPITAL_CONFIG.name} has been Srikakulam's trusted destination for maternal and child health. We believe that medical precision and compassionate care are not opposing forces — they are complementary strengths that every family deserves.
                 </p>
                 <p className="text-base sm:text-lg leading-relaxed" style={{ color:"var(--color-text-secondary)" }}>
                   From the very first prenatal consultation to the immunization of a growing child, our team of specialists walks alongside families with expertise, warmth, and unwavering dedication.
                 </p>
+
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 py-2">
+                  <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(26,92,94,0.15)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <span className="text-xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-primary)" }}>{HOSPITAL_CONFIG.established}</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">Established</span>
+                  </div>
+                  
+                  <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <span className="text-xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-secondary)" }}>{HOSPITAL_CONFIG.experience}</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">Experience</span>
+                  </div>
+
+                  <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(26,92,94,0.15)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <span className="text-xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-primary)" }}>{HOSPITAL_CONFIG.doctors}</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">Doctors</span>
+                  </div>
+
+                  <div className="group relative p-3 rounded-xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                    <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <span className="text-xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-secondary)" }}>{HOSPITAL_CONFIG.beds}</span>
+                    <span className="text-[10px] text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-0.5 group-hover:text-slate-800 transition-colors duration-300">Beds</span>
+                  </div>
+                </div>
                 <div className="pt-2">
                   <Link
                     href="/about"
@@ -266,7 +292,7 @@ export default function HomePage() {
               {
                 icon: <Award className="w-5 h-5" />,
                 title:"Senior Pediatric Expertise",
-                desc:"Dr. N. Vijaya Kumar: 25+ years of clinical excellence in child health.",
+                desc:"Dr.N.Vijaya Kumar: 25+ years of clinical excellence in child health.",
                 tint:"var(--color-champagne-light)",
                 accent:"var(--color-warning)",
               },

@@ -1,8 +1,13 @@
 export const HOSPITAL_CONFIG = {
   name: "Vijaya Harsha Mother & Child Hospital",
   shortName: "Vijaya Harsha Hospital",
-  tagline: "Premier Mother & Child Healthcare in Srikakulam",
+  tagline: "Motherly Love & Expert Care",
   subtitle: "Specialized Obstetrics, Gynecology, Level-III NICU, & Comprehensive Pediatric Excellence",
+  type: "Multispeciality Hospital",
+  established: 2005,
+  experience: "25+ Years",
+  doctors: "10+",
+  beds: 50,
   
   phone: process.env.HOSPITAL_PHONE || "+919440191244",
   phoneFormatted: "+91 94401 91244",

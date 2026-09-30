@@ -17,7 +17,7 @@ import { HOSPITAL_CONFIG } from"@/lib/constants";
 
 export const metadata = {
   title:"About Us | Vijaya Harsha Mother & Child Hospital",
-  description:"Learn about Vijaya Harsha Mother & Child Hospital in Srikakulam. Founded by Dr. N. Vijaya Kumar & Dr. Harsha Latha, offering Level-III NICU and advanced obstetric care.",
+  description:"Learn about Vijaya Harsha Mother & Child Hospital in Srikakulam. Founded by Dr.N.Vijaya Kumar & Dr. Harsha Latha, offering Level-III NICU and advanced obstetric care.",
 };
 
 export default function AboutPage() {
@@ -50,20 +50,40 @@ export default function AboutPage() {
                 Two Decades of Compassionate Care in Srikakulam
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Founded by <strong>Dr. N. Vijaya Kumar (Chief Pediatrician &amp; Neonatologist)</strong> and <strong>Dr. D. Harshavalli (Senior Obstetrician &amp; Laparoscopic Surgeon)</strong>, Vijaya Harsha Mother &amp; Child Hospital was conceived with a profound medical mission: to bring world-class tertiary maternal and neonatal intensive care to the families of Srikakulam and surrounding districts.
+                Founded by <strong>Dr.N.Vijaya Kumar (M.D. – Paediatrics)</strong> and <strong>Dr. D. Harshavalli (Obstetrics &amp; Gynaecology)</strong>, Vijaya Harsha Mother &amp; Child Hospital was conceived with a profound medical mission: to bring world-class tertiary maternal and neonatal intensive care to the families of Srikakulam and surrounding districts.
               </p>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 Over the past 25 years, the hospital has served more than 65,000 families, nurtured over 5,200 critically ill and premature infants in its Level-III NICU, and safely delivered over 18,500 healthy babies through evidence-based, compassionate obstetric practices.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 pt-2">
-                <div className="p-4 rounded-2xl border" style={{ backgroundColor:"var(--color-ivory-dark)", borderColor:"var(--color-border-warm)" }}>
-                  <span className="text-2xl font-black block" style={{ color:"var(--color-primary)" }}>25+</span>
-                  <span className="text-xs text-slate-600 font-semibold">Years Clinical Legacy</span>
+              <div className="pt-1 pb-3 border-b" style={{ borderColor: "var(--color-border-light)" }}>
+                <p className="text-lg font-bold" style={{ color: "var(--color-primary-dark)" }}>{HOSPITAL_CONFIG.tagline}</p>
+                <p className="text-sm font-semibold mt-1" style={{ color: "var(--color-secondary)" }}>{HOSPITAL_CONFIG.type}</p>
+              </div>
+
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+                <div className="group relative p-4 rounded-2xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(26,92,94,0.15)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <span className="text-3xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-primary)" }}>{HOSPITAL_CONFIG.established}</span>
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-1 group-hover:text-slate-800 transition-colors duration-300">Established</span>
                 </div>
-                <div className="p-4 rounded-2xl border" style={{ backgroundColor:"var(--color-ivory-dark)", borderColor:"var(--color-border-warm)" }}>
-                  <span className="text-2xl font-black block" style={{ color:"var(--color-secondary)" }}>18,500+</span>
-                  <span className="text-xs text-slate-600 font-semibold">Safe Deliveries</span>
+                
+                <div className="group relative p-4 rounded-2xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <span className="text-3xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-secondary)" }}>{HOSPITAL_CONFIG.experience}</span>
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-1 group-hover:text-slate-800 transition-colors duration-300">Experience</span>
+                </div>
+
+                <div className="group relative p-4 rounded-2xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(26,92,94,0.15)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <span className="text-3xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-primary)" }}>{HOSPITAL_CONFIG.doctors}</span>
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-1 group-hover:text-slate-800 transition-colors duration-300">Doctors</span>
+                </div>
+
+                <div className="group relative p-4 rounded-2xl border flex flex-col items-center justify-center text-center transition-all duration-500 hover:-translate-y-1.5 hover:shadow-[0_10px_40px_-10px_rgba(212,160,166,0.3)] overflow-hidden bg-white shadow-[6px_10px_24px_rgba(0,0,0,0.05)]" style={{ borderColor:"var(--color-border-warm)" }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-secondary)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <span className="text-3xl font-black block relative z-10 group-hover:scale-110 transition-transform duration-500 ease-out" style={{ color:"var(--color-secondary)" }}>{HOSPITAL_CONFIG.beds}</span>
+                  <span className="text-xs text-slate-500 font-bold uppercase tracking-wider relative z-10 mt-1 group-hover:text-slate-800 transition-colors duration-300">Beds</span>
                 </div>
               </div>
             </div>

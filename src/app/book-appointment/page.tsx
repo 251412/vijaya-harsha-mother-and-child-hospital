@@ -12,7 +12,7 @@ import AppointmentBookingForm from"@/components/AppointmentBookingForm";
 export const metadata = {
   title:"Book Doctor Appointment | Vijaya Harsha Mother & Child Hospital",
   description:
-"Book an appointment online with Dr. N. Vijaya Kumar (Pediatrics/NICU) or Dr. Harsha Latha (Obstetrics/Gynecology) at Vijaya Harsha Mother & Child Hospital, Srikakulam.",
+"Book an appointment online with Dr.N.Vijaya Kumar (Pediatrics/NICU) or Dr. Harsha Latha (Obstetrics/Gynecology) at Vijaya Harsha Mother & Child Hospital, Srikakulam.",
 };
 
 async function AppointmentBookingContent({
@@ -126,7 +126,7 @@ export default function BookAppointmentPage({
             Book Doctor Consultation
           </h1>
           <p className="text-sm sm:text-base max-w-2xl mt-3 leading-relaxed" style={{ color:"rgba(255, 255, 255, 0.85)" }}>
-            Schedule a priority consultation with Dr. N. Vijaya Kumar or Dr. Harsha Latha. Get automated confirmation and appointment tracking.
+            Schedule a priority consultation with Dr.N.Vijaya Kumar or Dr. Harsha Latha. Get automated confirmation and appointment tracking.
           </p>
         </div>
       </section>
