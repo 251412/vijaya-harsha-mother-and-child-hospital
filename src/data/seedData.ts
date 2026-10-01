@@ -73,7 +73,7 @@ export const DOCTORS: DoctorData[] = [
     department: "Pediatrics & Neonatal Care",
     experienceYears: 25,
     bio: "Dr. N. Vijaya Kumar is the Founder and Chief Pediatrician at Vijaya Harsha Mother & Child Hospital. With over 25 years of clinical excellence in Srikakulam and North Coastal Andhra Pradesh, he has spearheaded neonatal intensive care (NICU Level-III), reviving critically ill preterm newborns and guiding thousands of healthy children.",
-    photoUrl: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800",
+    photoUrl: "/images/Screenshot 2026-10-01 163101.png",
     consultationDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     consultationTimings: "09:30 AM - 01:30 PM & 05:30 PM - 09:00 PM",
     isAvailableForBooking: true,
@@ -88,7 +88,7 @@ export const DOCTORS: DoctorData[] = [
     department: "Obstetrics & Gynecology",
     experienceYears: 25,
     bio: "Dr. D. Harshavalli is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
-    photoUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
+    photoUrl: "/images/dr.harshavalli.jpg",
     consultationDays: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     consultationTimings: "10:00 AM - 02:00 PM & 05:00 PM - 08:30 PM",
     isAvailableForBooking: true,
@@ -103,7 +103,7 @@ export const DOCTORS: DoctorData[] = [
     department: "Fetal Medicine & Antenatal Care",
     experienceYears: 6,
     bio: "Specializing in targeted anomaly scans, genetic screenings, amniocentesis, and intra-uterine fetal wellness monitoring. Dr. Anitha Devi ensures that unborn babies receive the earliest advanced diagnostics for optimal birth outcomes.",
-    photoUrl: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
+    photoUrl: "/images/Dr. P. Anitha Devi.png",
     consultationDays: ["Monday", "Wednesday", "Friday", "Saturday"],
     consultationTimings: "10:00 AM - 01:30 PM",
     isAvailableForBooking: true,
@@ -127,6 +127,24 @@ export const DOCTORS: DoctorData[] = [
 ];
 
 export const SERVICES: ServiceData[] = [
+  {
+    id: "srv-0",
+    title: "Sattva Garbhasanskar Clinic",
+    slug: "sattva-garbhasanskar",
+    category: "GARBHASANSKAR",
+    shortDescription: "A holistic pregnancy care program blending ancient Indian wisdom with modern science, nurturing the physical, mental, emotional and spiritual well-being of mother and baby.",
+    fullDescription: "Sattva Garbhasanskar Clinic was launched as the first Garbhasanskar clinic in Srikakulam to provide pregnant women with an approach that blends ancient Indian culture with modern science. The program focuses on holistic well-being alongside physical health, including mental, emotional and spiritual well-being. The clinic also conducts workshops that include guidance on diet and sleep, yoga postures, mantra chanting, meditation, pranayama, music and bhajans.",
+    iconName: "Heart",
+    benefits: [
+      "Holistic pregnancy & wellness care",
+      "Diet, sleep & healthy pregnancy guidance",
+      "Yoga, meditation & pranayama",
+      "Mantras, music & mindful workshops"
+    ],
+    features: [],
+    imageUrl: "/images/attva-clinic-service.jpg",
+    order: 0
+  },
   {
     id: "srv-1",
     title: "Maternity & Comprehensive Birthing Care",
@@ -456,6 +474,6 @@ export const FAQS = [
   },
   {
     q: "Where is the hospital located in Srikakulam?",
-    a: "We are centrally located at 80 Feet Road, Visakha 'A' Colony, near Saraswathi Mahal and Rythu Bazar in Srikakulam (PIN 532001), easily accessible by auto, car, or ambulance."
+    a: "We are centrally located Near Saraswati Theater, Srikakulam, easily accessible by auto, car, or ambulance."
   }
 ];

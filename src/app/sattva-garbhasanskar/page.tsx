@@ -52,7 +52,7 @@ export default function SattvaGarbhasanskarPage() {
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5] lg:aspect-square max-w-md mx-auto lg:max-w-none">
                 {/* Fallback to generic portrait if real photo is not mapped */}
                 <Image
-                  src="/images/dr-d-harshavalli.jpg"
+                  src="/images/dr.harshavalli.jpg"
                   alt="Dr. D. Harshavalli"
                   fill
                   className="object-cover"

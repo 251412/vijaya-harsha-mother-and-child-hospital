@@ -14,7 +14,7 @@ import ContactForm from"@/components/ContactForm";
 export const metadata = {
   title:"Contact Us & Location | Vijaya Harsha Mother & Child Hospital",
   description:
-"Get in touch with Vijaya Harsha Mother & Child Hospital in Srikakulam. View our Google Maps location, address at 80 Feet Road, phone numbers, and submit an online inquiry.",
+"Get in touch with Vijaya Harsha Mother & Child Hospital in Srikakulam. View our Google Maps location, address Near Saraswati Theater, phone numbers, and submit an online inquiry.",
 };
 
 export default function ContactPage() {
@@ -180,7 +180,7 @@ export default function ContactPage() {
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color:"var(--color-primary)" }}>Hospital Location Map</span>
             <h2 className="font-serif text-2xl sm:text-3xl font-bold" style={{ color:"var(--color-primary-dark)" }}>Find Us in Srikakulam</h2>
             <p className="text-xs text-slate-500">
-              Conveniently located on 80 Feet Road, PN Colony, Srikakulam — easily accessible from all major highways.
+              Conveniently located Near Saraswati Theater, Srikakulam — easily accessible from all major highways.
             </p>
           </div>
 

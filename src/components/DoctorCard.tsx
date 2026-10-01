@@ -14,7 +14,7 @@ interface DoctorCardProps {
 export default function DoctorCard({ doctor, featured = false }: DoctorCardProps) {
   return (
     <div
-      className={`group relative flex flex-col md:flex-row bg-white rounded-3xl transition-all duration-500 ease-out hover:-translate-y-1 ${
+      className={`group relative flex flex-col md:flex-row h-full bg-white rounded-3xl transition-all duration-500 ease-out hover:-translate-y-1 ${
         featured ? "ring-2 ring-[var(--color-primary)] ring-offset-4" : ""
       }`}
       style={{
@@ -98,7 +98,7 @@ export default function DoctorCard({ doctor, featured = false }: DoctorCardProps
               Book
             </Link>
             <Link
-              href={`/doctors#${doctor.slug}`}
+              href={`/doctors/${doctor.slug}`}
               className="btn btn-secondary text-xs justify-center py-2.5 px-4 flex items-center gap-1 rounded-full bg-white hover:bg-slate-50 border border-slate-200"
             >
               Profile

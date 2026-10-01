@@ -185,7 +185,7 @@ export default function EmergencyPage() {
                   <span className="font-semibold text-slate-900">{HOSPITAL_CONFIG.address.full}</span>
                 </p>
                 <p className="text-slate-500">
-                  Landmark: Near Saraswathi Mahal / Rythu Bazar on 80 Feet Road. Wide road allowing rapid ambulance entry directly to casualty.
+                  Landmark: Near Saraswati Theater, Srikakulam. Wide road allowing rapid ambulance entry directly to casualty.
                 </p>
                 <p className="flex items-center gap-2 pt-2">
                   <PhoneCall className="w-4 h-4 text-[#0284C7]" />

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
 import { HOSPITAL_CONFIG } from "@/lib/constants";
 import TransitionProvider from "@/components/TransitionProvider";
+import WelcomePopup from "@/components/WelcomePopup";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -109,9 +110,10 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <TransitionProvider>
-          <main className="flex-1 w-full">{children}</main>
+          <main className="flex-1 w-full pt-[130px] sm:pt-[140px]">{children}</main>
         </TransitionProvider>
         <WhatsAppFloatingButton />
+        <WelcomePopup />
         <Footer />
       </body>
     </html>

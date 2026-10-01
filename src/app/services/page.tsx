@@ -8,6 +8,7 @@ import ServiceCard from "@/components/ServiceCard";
 
 const CATEGORIES = [
   "All Services",
+  "Garbhasanskar",
   "Maternity",
   "Neonatology",
   "Pediatrics",

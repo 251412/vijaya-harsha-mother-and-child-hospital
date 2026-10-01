@@ -31,7 +31,7 @@ export default function Navbar() {
     { name:"About", href:"/about" },
     { name:"Doctors", href:"/doctors" },
     { name:"Services", href:"/services" },
-    { name:"Garbhasanskar", href:"/sattva-garbhasanskar" },
+    { name:"Sattva Garbhasamskar Clinic", href:"/sattva-garbhasanskar" },
     { name:"Gallery", href:"/gallery" },
     { name:"Blog", href:"/blog" },
     { name:"Contact", href:"/contact" },
@@ -64,12 +64,10 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full">
         {/* Top Info Bar — collapses on scroll */}
         <div
-          className={`overflow-hidden transition-all duration-300 ease-out ${
-            scrolled ?"max-h-0 opacity-0" :"max-h-12 opacity-100"
-          }`}
+          className="overflow-hidden transition-all duration-300 ease-out max-h-12 opacity-100"
           style={{ background:"var(--color-primary-dark)" }}
         >
           <div className="container-wide flex justify-between items-center py-1.5" style={{ color:"rgba(255, 255, 255, 0.85)" }}>
@@ -95,7 +93,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
               <span className="hidden lg:flex items-center gap-1 text-[11px]" style={{ color:"rgba(255, 255, 255, 0.85)" }}>
                 <MapPin className="w-3 h-3" />
-                Visakha Colony, Srikakulam
+                Near Saraswati Theater, Srikakulam
               </span>
               <a
                 href={`tel:${HOSPITAL_CONFIG.phone}`}
@@ -110,13 +108,9 @@ export default function Navbar() {
 
         {/* Main Navbar */}
         <nav
-          className={`w-full transition-all duration-300 ${
-            scrolled
-              ?"py-2 shadow-md"
-              :"py-3 shadow-sm"
-          }`}
+          className="w-full transition-all duration-300 py-3 shadow-md"
           style={{
-            backgroundColor: scrolled ?"rgba(253, 250, 246, 0.97)" :"rgba(253, 250, 246, 0.95)",
+            backgroundColor: "rgba(253, 250, 246, 0.97)",
             backdropFilter:"blur(16px)",
             WebkitBackdropFilter:"blur(16px)",
             borderBottom: `1px solid ${scrolled ?"var(--color-border)" :"var(--color-border-light)"}`,

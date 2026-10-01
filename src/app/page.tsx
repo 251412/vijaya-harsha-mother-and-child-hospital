@@ -88,6 +88,42 @@ export default function HomePage() {
                 </div>
               </ScrollReveal>
 
+
+              {/* Sattva Feature Badge */}
+              <ScrollReveal animation="slideUp" delay={0.7}>
+                <div className="mt-10 sm:mt-12 pt-8 border-t border-slate-200/60 max-w-lg mx-auto lg:mx-0">
+                  <div className="flex flex-col sm:flex-row items-center gap-5 bg-white/80 backdrop-blur-md p-4 rounded-3xl border border-purple-200/50 shadow-[0_0_45px_rgba(139,92,246,0.4)] hover:shadow-[0_0_65px_rgba(139,92,246,0.6)] transition-shadow duration-500 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-100/30 to-transparent pointer-events-none" />
+                    <div className="shrink-0 relative w-48 h-48 sm:w-56 sm:h-56 bg-white rounded-2xl shadow-inner border border-purple-50 flex items-center justify-center overflow-hidden relative z-10">
+                      <div className="relative w-[95%] h-[95%]">
+                        <Image 
+                          src="/images/sattva-logo-full.png"
+                          alt="Sattva Garbhasanskar Clinic Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </div>
+                    <div className="text-center sm:text-left flex-1">
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-primary)] mb-1">
+                        Our Specialized Unit
+                      </p>
+                      <Link href="/sattva-garbhasanskar" className="group inline-flex items-center gap-2">
+                        <span className="font-serif font-bold text-slate-800 text-sm sm:text-base group-hover:text-[var(--color-primary-dark)] transition-colors">
+                          Sattva Garbhasanskar Clinic
+                        </span>
+                        <div className="w-6 h-6 rounded-full bg-[var(--color-primary-muted)] flex items-center justify-center group-hover:bg-[var(--color-primary)] transition-colors">
+                          <ArrowRight className="w-3 h-3 text-[var(--color-primary)] group-hover:text-white group-hover:translate-x-0.5 transition-all" />
+                        </div>
+                      </Link>
+                      <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                        Holistic care blending ancient wisdom with modern medicine for mother & baby.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </ScrollReveal>
+
             </div>
 
             {/* RIGHT COLUMN — Premium Image Composition */}
@@ -651,7 +687,7 @@ export default function HomePage() {
                   In the Heart of Srikakulam
                 </h2>
                 <p className="text-sm leading-relaxed" style={{ color:"var(--color-text-secondary)" }}>
-                  Located on 80 Feet Road in Visakha &apos;A&apos; Colony, near Saraswathi Mahal and Rythu Bazar. Ample parking, wheelchair access, and round-the-clock emergency entrance.
+                  Located Near Saraswati Theater, Srikakulam. Ample parking, wheelchair access, and round-the-clock emergency entrance.
                 </p>
 
                 <div className="space-y-2 text-sm pt-2" style={{ color:"var(--color-text-secondary)" }}>

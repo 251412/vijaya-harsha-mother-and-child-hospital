@@ -86,12 +86,21 @@ export default function ServiceCard({ service, featured = false }: ServiceCardPr
             Book Specialist
           </Link>
 
-          <Link
-            href={`/services#${service.slug}`}
-            className="text-xs font-semibold text-slate-500 hover:text-slate-900 flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
-          >
-            Details <ChevronRight className="w-3.5 h-3.5" />
-          </Link>
+          {service.slug === "sattva-garbhasanskar" ? (
+            <Link
+              href="/sattva-garbhasanskar"
+              className="text-xs font-semibold text-slate-500 hover:text-slate-900 flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+            >
+              Details <ChevronRight className="w-3.5 h-3.5" />
+            </Link>
+          ) : (
+            <Link
+              href={`/services/${service.slug}`}
+              className="text-xs font-semibold text-slate-500 hover:text-slate-900 flex items-center gap-0.5 group-hover:translate-x-1 transition-transform"
+            >
+              Details <ChevronRight className="w-3.5 h-3.5" />
+            </Link>
+          )}
         </div>
       </div>
     </div>

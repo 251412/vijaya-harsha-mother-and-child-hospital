@@ -20,13 +20,13 @@ export const HOSPITAL_CONFIG = {
   email: process.env.HOSPITAL_EMAIL || "info@vijayaharshahospital.com",
   
   address: {
-    street: "80 Feet Road, Visakha 'A' Colony",
-    landmark: "Near Saraswathi Mahal / Rythu Bazar",
+    street: "Near Saraswati Theater",
+    landmark: "Near Saraswati Theater",
     city: "Srikakulam",
     state: "Andhra Pradesh",
     pincode: "532001",
     country: "India",
-    full: "80 Feet Road, Visakha 'A' Colony, Near Saraswathi Mahal, Srikakulam, Andhra Pradesh 532001"
+    full: "Near Saraswati Theater, Srikakulam, Andhra Pradesh 532001"
   },
   
   coordinates: {

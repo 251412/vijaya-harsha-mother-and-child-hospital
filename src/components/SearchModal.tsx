@@ -165,7 +165,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     {filteredDoctors.map((doc) => (
                       <Link
                         key={doc.id}
-                        href={`/doctors#${doc.slug}`}
+                        href={`/doctors/${doc.slug}`}
                         onClick={onClose}
                         className="flex items-center justify-between p-3 rounded-xl hover:bg-sky-50/70 border border-transparent hover:border-sky-100 transition-colors group"
                       >
@@ -195,7 +195,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     {filteredServices.map((srv) => (
                       <Link
                         key={srv.id}
-                        href={`/services#${srv.slug}`}
+                        href={`/services/${srv.slug}`}
                         onClick={onClose}
                         className="flex items-center justify-between p-3 rounded-xl hover:bg-sky-50/70 border border-transparent hover:border-sky-100 transition-colors group"
                       >

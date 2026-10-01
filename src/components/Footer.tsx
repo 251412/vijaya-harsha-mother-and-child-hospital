@@ -39,10 +39,10 @@ export default function Footer() {
     {
       title:"Key Specialities",
       links: [
-        { name:"Level-III NICU", href:"/services#level-iii-nicu" },
-        { name:"Painless Delivery", href:"/services#painless-delivery" },
-        { name:"High-Risk Obstetrics", href:"/services#high-risk-pregnancy" },
-        { name:"Pediatric ICU", href:"/services#pediatric-icu" },
+        { name:"Level-III NICU", href:"/services/level-3-nicu" },
+        { name:"Painless Delivery", href:"/services/maternity-birthing-care" },
+        { name:"High-Risk Obstetrics", href:"/services/maternity-birthing-care" },
+        { name:"Pediatric ICU", href:"/services/pediatric-picu" },
       ],
     },
   ];
