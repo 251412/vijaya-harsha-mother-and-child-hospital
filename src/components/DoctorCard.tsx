@@ -32,7 +32,7 @@ export default function DoctorCard({ doctor, featured = false }: DoctorCardProps
             alt={doctor.name}
             fill
             sizes="(max-width: 768px) 100vw, 40vw"
-            className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+            className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
           />
           {/* Subtle overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/40 via-transparent to-transparent md:opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
