@@ -131,27 +131,18 @@ export default function CinematicTransition() {
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
               <Image
-                src="/images/transition_mother_baby.jpg"
+                src="/images/sattva-popup.jpg"
                 alt="Mother and Baby Hugging - Vijaya Harsha Hospital"
                 width={200}
                 height={200}
-                className="w-full h-full object-cover object-center rounded-2xl shadow-inner"
+                className="w-full h-full object-contain object-center rounded-2xl shadow-inner bg-white"
                 priority
               />
               {/* Soft Warm Radial Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-teal-950/40 via-transparent to-transparent" />
             </motion.div>
 
-            {/* Official Hospital Emblem Logo Badge (Overlapping Bottom Right) */}
-            <div className="absolute -bottom-1 -right-1 bg-white p-1 rounded-2xl shadow-xl border border-teal-200/80">
-              <Image
-                src="/images/logo.png"
-                alt="Vijaya Harsha Hospital Official Logo"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
-              />
-            </div>
+
           </div>
         </div>
 

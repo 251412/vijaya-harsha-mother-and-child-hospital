@@ -97,7 +97,7 @@ export default function HomePage() {
                     <div className="shrink-0 relative w-48 h-48 sm:w-56 sm:h-56 bg-white rounded-2xl shadow-inner border border-purple-50 flex items-center justify-center overflow-hidden relative z-10">
                       <div className="relative w-[95%] h-[95%]">
                         <Image 
-                          src="/images/sattva-logo-full.png"
+                          src="/images/sattva-popup.jpg"
                           alt="Sattva Garbhasanskar Clinic Logo"
                           fill
                           className="object-contain"

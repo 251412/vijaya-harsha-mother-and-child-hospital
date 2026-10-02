@@ -419,6 +419,54 @@ export const GALLERY_ITEMS: GalleryItemData[] = [
     imageUrl: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=1000",
     caption: "Spacious private accommodation ensuring calm rest, family privacy, and dedicated nursing attention.",
     order: 6
+  },
+  {
+    id: "gal-7",
+    title: "Green Initiative: Celebrating New Life",
+    category: "Maternity & Rooms",
+    imageUrl: "/images/green-initiative.jpg",
+    caption: "Our doctors presenting a sapling to the proud parents and their newborn, symbolizing growth and a healthy future.",
+    order: 7
+  },
+  {
+    id: "gal-8",
+    title: "Hospital Facility Overview",
+    category: "NICU & Facilities",
+    imageUrl: "/images/Screenshot 2026-10-02 104520.png",
+    caption: "A glimpse of our state-of-the-art facilities ensuring the highest standards of healthcare.",
+    order: 8
+  },
+  {
+    id: "gal-9",
+    title: "Patient Care Area",
+    category: "Maternity & Rooms",
+    imageUrl: "/images/Screenshot 2026-10-02 104546.png",
+    caption: "Comfortable and safe environment designed for optimal patient recovery and care.",
+    order: 9
+  },
+  {
+    id: "gal-10",
+    title: "Advanced Medical Equipment",
+    category: "Surgery & Technology",
+    imageUrl: "/images/Screenshot 2026-10-02 104621.png",
+    caption: "Equipped with the latest medical technology for accurate diagnostics and treatment.",
+    order: 10
+  },
+  {
+    id: "gal-11",
+    title: "Pediatric Consultation",
+    category: "Pediatrics & OPD",
+    imageUrl: "/images/Screenshot 2026-10-02 104724.png",
+    caption: "Child-friendly consultation spaces providing a reassuring experience for our young patients.",
+    order: 11
+  },
+  {
+    id: "gal-12",
+    title: "Diagnostic Services",
+    category: "Diagnostics",
+    imageUrl: "/images/Screenshot 2026-10-02 104752.png",
+    caption: "Comprehensive diagnostic and imaging services under one roof for quick and reliable results.",
+    order: 12
   }
 ];
 

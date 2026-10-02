@@ -187,7 +187,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Vijaya Harsha Mother & Child Hospital, Srikakulam. All rights reserved.
           </p>
           <p className="text-[11px]  flex items-center gap-1" style={{ color:"rgba(255, 255, 255, 0.85)" }}>
-            Made with <Heart className="w-3 h-3" style={{ color:"var(--color-secondary)" }} /> in Srikakulam
+            Made with <Heart className="w-3 h-3" style={{ color:"var(--color-secondary)" }} /> by WinWin
           </p>
         </div>
       </div>
