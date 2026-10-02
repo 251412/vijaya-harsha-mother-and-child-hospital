@@ -47,7 +47,8 @@ export interface GalleryItemData {
   id: string;
   title: string;
   category: string;
-  imageUrl: string;
+  imageUrl?: string;
+  videoUrl?: string;
   caption: string;
   order: number;
 }
@@ -373,62 +374,6 @@ For parents worried about infant discomfort, modern acellular pertussis combinat
 
 export const GALLERY_ITEMS: GalleryItemData[] = [
   {
-    id: "gal-1",
-    title: "Advanced Level-III Neonatal Intensive Care Unit (NICU)",
-    category: "NICU & Facilities",
-    imageUrl: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&q=80&w=1000",
-    caption: "Equipped with GE Giraffe incubators and Dräger life-support neonatal ventilators for preterm care.",
-    order: 1
-  },
-  {
-    id: "gal-2",
-    title: "Private Labor, Delivery & Recovery (LDR) Suite",
-    category: "Maternity & Rooms",
-    imageUrl: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1000",
-    caption: "Warm, family-centric labor suite designed for comfortable and painless natural birthing.",
-    order: 2
-  },
-  {
-    id: "gal-3",
-    title: "Ultra-Clean Modular Operation Theater",
-    category: "Surgery & Technology",
-    imageUrl: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1000",
-    caption: "Equipped with laminar airflow, HEPA filtration, and high-definition laparoscopy equipment.",
-    order: 3
-  },
-  {
-    id: "gal-4",
-    title: "Pediatric Outpatient Consultation & Play Wing",
-    category: "Pediatrics & OPD",
-    imageUrl: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=1000",
-    caption: "A bright, joyful clinical environment where infants and children feel secure and comfortable.",
-    order: 4
-  },
-  {
-    id: "gal-5",
-    title: "High-Definition 4D Fetal Ultrasound Wing",
-    category: "Diagnostics",
-    imageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1000",
-    caption: "Voluson high-resolution ultrasound scanner providing precision fetal anomaly screenings.",
-    order: 5
-  },
-  {
-    id: "gal-6",
-    title: "Deluxe Mother & Newborn Post-Delivery Room",
-    category: "Maternity & Rooms",
-    imageUrl: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&q=80&w=1000",
-    caption: "Spacious private accommodation ensuring calm rest, family privacy, and dedicated nursing attention.",
-    order: 6
-  },
-  {
-    id: "gal-7",
-    title: "Green Initiative: Celebrating New Life",
-    category: "Maternity & Rooms",
-    imageUrl: "/images/green-initiative.jpg",
-    caption: "Our doctors presenting a sapling to the proud parents and their newborn, symbolizing growth and a healthy future.",
-    order: 7
-  },
-  {
     id: "gal-8",
     title: "Hospital Facility Overview",
     category: "NICU & Facilities",
@@ -438,35 +383,43 @@ export const GALLERY_ITEMS: GalleryItemData[] = [
   },
   {
     id: "gal-9",
-    title: "Patient Care Area",
-    category: "Maternity & Rooms",
-    imageUrl: "/images/Screenshot 2026-10-02 104546.png",
-    caption: "Comfortable and safe environment designed for optimal patient recovery and care.",
-    order: 9
-  },
-  {
-    id: "gal-10",
-    title: "Advanced Medical Equipment",
-    category: "Surgery & Technology",
-    imageUrl: "/images/Screenshot 2026-10-02 104621.png",
-    caption: "Equipped with the latest medical technology for accurate diagnostics and treatment.",
-    order: 10
-  },
-  {
-    id: "gal-11",
     title: "Pediatric Consultation",
     category: "Pediatrics & OPD",
     imageUrl: "/images/Screenshot 2026-10-02 104724.png",
     caption: "Child-friendly consultation spaces providing a reassuring experience for our young patients.",
-    order: 11
+    order: 9
   },
   {
-    id: "gal-12",
+    id: "gal-10",
+    title: "Maternity Care & Checkups",
+    category: "Maternity & Rooms",
+    imageUrl: "/images/Screenshot 2026-10-02 104827.png",
+    caption: "Dedicated maternal care ensuring the well-being of both mother and child.",
+    order: 10
+  },
+  {
+    id: "gal-11",
     title: "Diagnostic Services",
     category: "Diagnostics",
     imageUrl: "/images/Screenshot 2026-10-02 104752.png",
     caption: "Comprehensive diagnostic and imaging services under one roof for quick and reliable results.",
-    order: 12
+    order: 11
+  },
+  {
+    id: "gal-13",
+    title: "Free Workshop on Nutrition for Pregnant & Breastfeeding Mothers",
+    category: "Videos",
+    videoUrl: "/videos/WhatsApp%20Video%202026-10-02%20at%204.06.31%20PM.mp4",
+    caption: "Proper nutrition during pregnancy isn't just for baby's healthy growth—it is also essential for a mother's postpartum recovery and milk production! Join us for an exclusive, informative session led by Dr. Anitha Devi (DNB, OBG, Consultant & Gynaecologist) to learn all about the right dietary habits for you and your little one",
+    order: 13
+  },
+  {
+    id: "gal-14",
+    title: "Welcome to Sattva Garbhasankar Clinic",
+    category: "Videos",
+    videoUrl: "/videos/WhatsApp%20Video%202026-10-02%20at%204.07.33%20PM.mp4",
+    caption: "Welcome to Sattva Garbhasankar Clinic – Srikakulam's First Holistic Care for Mother & Baby! Every parent dreams of raising a healthy, wise, and happy child who excels in life. At Vijayaharsha Mother & Child Hospital, we are proud to introduce Sattva Garbhasankar Clinic, blending timeless Indian traditions with modern science to offer a completely new approach to prenatal care. Our holistic wellness programs go beyond physical health, nurturing the mental, emotional, and spiritual well-being of both mother and baby.",
+    order: 14
   }
 ];
 

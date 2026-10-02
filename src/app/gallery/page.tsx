@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState } from"react";
-import Image from"next/image";
-import { GALLERY_ITEMS, GalleryItemData } from"@/data/seedData";
-import LightboxModal from"@/components/LightboxModal";
-import { Filter, Maximize2, Tag } from"lucide-react";
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { GALLERY_ITEMS } from "@/data/seedData";
+import { Filter, Maximize2, Tag } from "lucide-react";
 
 const CATEGORIES = [
-"All Photos",
+"All",
+"Videos",
 "NICU & Facilities",
 "Maternity & Rooms",
 "Surgery & Technology",
@@ -16,11 +17,10 @@ const CATEGORIES = [
 ];
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All Photos");
-  const [activeLightboxItem, setActiveLightboxItem] = useState<GalleryItemData | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredItems = GALLERY_ITEMS.filter((item) => {
-    return selectedCategory ==="All Photos" || item.category === selectedCategory;
+    return selectedCategory === "All" || item.category === selectedCategory;
   });
 
   return (
@@ -71,20 +71,31 @@ export default function GalleryPage() {
         <div className="container-wide">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredItems.map((item) => (
-              <div
+              <Link
                 key={item.id}
-                onClick={() => setActiveLightboxItem(item)}
+                href={`/gallery/${item.id}`}
                 className="group relative rounded-2xl overflow-hidden bg-slate-100 border shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer aspect-[4/3]"
-                style={{ borderColor:"var(--color-border-warm)" }}
+                style={{ borderColor: "var(--color-border-warm)" }}
               >
-                {/* Image */}
-                <Image
-                  src={item.imageUrl}
-                  alt={item.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                {/* Media */}
+                {item.videoUrl ? (
+                  <video
+                    src={item.videoUrl}
+                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  item.imageUrl && (
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  )
+                )}
 
                 {/* Hover overlay with text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-between text-white">
@@ -103,21 +114,12 @@ export default function GalleryPage() {
                     <p className="text-xs  line-clamp-2 mt-1" style={{ color:"rgba(255, 255, 255, 0.85)" }}>{item.caption}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Lightbox Modal */}
-      {activeLightboxItem && (
-        <LightboxModal
-          item={activeLightboxItem}
-          allItems={filteredItems}
-          onClose={() => setActiveLightboxItem(null)}
-          onSelectIndex={(index) => setActiveLightboxItem(filteredItems[index])}
-        />
-      )}
     </div>
   );
 }

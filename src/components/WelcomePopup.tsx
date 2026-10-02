@@ -13,7 +13,7 @@ export default function WelcomePopup() {
     const hasSeenPopup = sessionStorage.getItem("hasSeenWelcomePopup");
     
     if (!hasSeenPopup) {
-      // Delay popup by 2 seconds for better UX
+      // Delay popup by 1.5 seconds for better UX
       const timer = setTimeout(() => {
         setIsOpen(true);
       }, 1500);
@@ -21,6 +21,19 @@ export default function WelcomePopup() {
       return () => clearTimeout(timer);
     }
   }, []);
+
+  useEffect(() => {
+    let closeTimer: NodeJS.Timeout;
+    if (isOpen) {
+      closeTimer = setTimeout(() => {
+        setIsOpen(false);
+        sessionStorage.setItem("hasSeenWelcomePopup", "true");
+      }, 5000);
+    }
+    return () => {
+      if (closeTimer) clearTimeout(closeTimer);
+    };
+  }, [isOpen]);
 
   const handleClose = () => {
     setIsOpen(false);

@@ -9,12 +9,12 @@ export const HOSPITAL_CONFIG = {
   doctors: "10+",
   beds: 50,
   
-  phone: process.env.HOSPITAL_PHONE || "+919440191244",
-  phoneFormatted: "+91 94401 91244",
-  emergencyPhone: process.env.EMERGENCY_PHONE || "+918942222333",
-  emergencyPhoneFormatted: "+91 8942 222333",
-  ambulancePhone: "+91 8942 222334",
-  whatsappNumber: process.env.WHATSAPP_NUMBER || "+919440191244",
+  phone: process.env.HOSPITAL_PHONE || "+919990991868",
+  phoneFormatted: "+91 99909 91868",
+  emergencyPhone: process.env.EMERGENCY_PHONE || "+919990991868",
+  emergencyPhoneFormatted: "+91 99909 91868",
+  ambulancePhone: "+91 99909 91868",
+  whatsappNumber: process.env.WHATSAPP_NUMBER || "+919990991868",
   whatsappMessage: "Hello Vijaya Harsha Hospital, I would like to inquire about consultation and hospital services.",
   
   email: process.env.HOSPITAL_EMAIL || "info@vijayaharshahospital.com",
