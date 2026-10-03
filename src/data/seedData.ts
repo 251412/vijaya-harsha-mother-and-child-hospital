@@ -375,34 +375,34 @@ For parents worried about infant discomfort, modern acellular pertussis combinat
 export const GALLERY_ITEMS: GalleryItemData[] = [
   {
     id: "gal-8",
-    title: "Hospital Facility Overview",
+    title: "A Beautiful Beginning",
     category: "NICU & Facilities",
     imageUrl: "/images/Screenshot 2026-10-02 104520.png",
-    caption: "A glimpse of our state-of-the-art facilities ensuring the highest standards of healthcare.",
+    caption: "Vijaya Harsha Mother & Child Hospital\n\nSuccessful Normal Delivery with expert care.\nHealthy Mother • Happy Baby 👶💙",
     order: 8
   },
   {
     id: "gal-9",
-    title: "Pediatric Consultation",
+    title: "Celebrating New Life, Growing a Greener Future",
     category: "Pediatrics & OPD",
     imageUrl: "/images/Screenshot 2026-10-02 104724.png",
-    caption: "Child-friendly consultation spaces providing a reassuring experience for our young patients.",
+    caption: "At Vijaya Harsha Mother & Child Hospital, a beautiful sapling was gifted to the new mother, symbolizing new life, growth, and a healthy future.",
     order: 9
   },
   {
     id: "gal-10",
-    title: "Maternity Care & Checkups",
+    title: "Nurturing Motherhood, Shaping a Healthier Future",
     category: "Maternity & Rooms",
     imageUrl: "/images/Screenshot 2026-10-02 104827.png",
-    caption: "Dedicated maternal care ensuring the well-being of both mother and child.",
+    caption: "Sattva Garbhasanskar Clinic\nSupporting the physical, mental, emotional & spiritual well-being of mother and baby.",
     order: 10
   },
   {
     id: "gal-11",
-    title: "Diagnostic Services",
-    category: "Diagnostics",
-    imageUrl: "/images/Screenshot 2026-10-02 104752.png",
-    caption: "Comprehensive diagnostic and imaging services under one roof for quick and reliable results.",
+    title: "Nutrition Awareness Session Successfully Conducted!",
+    category: "Maternity & Rooms",
+    imageUrl: "/images/Screenshot 2026-10-03 141757.png",
+    caption: "A meaningful session was conducted at Vijayaharsha Mother & Child Hospital to promote healthy nutrition and well-being among pregnant & breastfeeding mothers. 🤰💗👩🍼\n\nThe session focused on the importance of balanced nutrition, healthy eating habits, and proper care for both mother and baby.",
     order: 11
   },
   {

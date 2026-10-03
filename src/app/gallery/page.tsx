@@ -9,11 +9,6 @@ import { Filter, Maximize2, Tag } from "lucide-react";
 const CATEGORIES = [
 "All",
 "Videos",
-"NICU & Facilities",
-"Maternity & Rooms",
-"Surgery & Technology",
-"Pediatrics & OPD",
-"Diagnostics",
 ];
 
 export default function GalleryPage() {
@@ -74,7 +69,7 @@ export default function GalleryPage() {
               <Link
                 key={item.id}
                 href={`/gallery/${item.id}`}
-                className="group relative rounded-2xl overflow-hidden bg-slate-100 border shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer aspect-[4/3]"
+                className={`group relative rounded-2xl overflow-hidden bg-slate-100 border shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer ${item.videoUrl ? 'aspect-[9/16]' : 'aspect-[4/3]'}`}
                 style={{ borderColor: "var(--color-border-warm)" }}
               >
                 {/* Media */}
@@ -99,11 +94,7 @@ export default function GalleryPage() {
 
                 {/* Hover overlay with text */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent opacity-90 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-between text-white">
-                  <div className="flex justify-between items-start">
-                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold text-white" style={{ backgroundColor:"var(--color-primary)" }}>
-                      <Tag className="w-3 h-3" />
-                      {item.category}
-                    </span>
+                  <div className="flex justify-end items-start">
                     <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
                       <Maximize2 className="w-4 h-4 text-white" />
                     </div>
