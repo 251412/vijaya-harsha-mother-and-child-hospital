@@ -305,8 +305,8 @@ export default function HomePage() {
           <ScrollReveal animation="slideUp">
             <SectionHeading
               eyebrow="Hospital Foundations"
-              title="Why Families Trust Vijaya Harsha"
-              description="Combining world-class medical equipment with deeply compassionate care for mothers, infants, and growing children."
+              title="Why Families Choose Vijayaharsha"
+              description="Trusted healthcare for mothers, newborns, and children, backed by advanced facilities and experienced medical care."
             />
             
             <div className="flex justify-center mt-8 -mb-4">
@@ -326,29 +326,29 @@ export default function HomePage() {
             {[
               {
                 icon: <Baby className="w-5 h-5" />,
-                title:"Tertiary Level-III NICU",
-                desc:"GE Giraffe warmers and Dräger neonatal ventilators for micro-preterms.",
+                title:"Advanced Level-III NICU",
+                desc:"Specialized neonatal care for premature and critically ill newborns, supported by modern ventilators and neonatal warmers.",
                 tint:"var(--color-primary-muted)",
                 accent:"var(--color-primary)",
               },
               {
                 icon: <Heart className="w-5 h-5" />,
-                title:"Painless Natural Delivery",
-                desc:"Safe labor analgesia with 24/7 obstetricians and emergency readiness.",
+                title:"Safe & Comfortable Maternity Care",
+                desc:"Personalized maternity care with experienced obstetricians, pain-management options, and 24/7 emergency support.",
                 tint:"var(--color-secondary-light)",
                 accent:"var(--color-secondary-dark)",
               },
               {
                 icon: <Award className="w-5 h-5" />,
-                title:"Senior Pediatric Expertise",
-                desc:"Dr.N.Vijaya Kumar: 25+ years of clinical excellence in child health.",
+                title:"Experienced Pediatric Care",
+                desc:"Expert pediatric care led by Dr. N. Vijaya Kumar, with over 25 years of experience in child healthcare.",
                 tint:"var(--color-champagne-light)",
                 accent:"var(--color-warning)",
               },
               {
                 icon: <Clock className="w-5 h-5" />,
-                title:"24/7 Emergency & Pharmacy",
-                desc:"Round-the-clock ambulance, casualty, ultrasound, and pathology lab.",
+                title:"24/7 Emergency Services",
+                desc:"Round-the-clock emergency care with ambulance support, casualty services, ultrasound, and diagnostic laboratory facilities.",
                 tint:"var(--color-sage-muted)",
                 accent:"var(--color-sage)",
               },
