@@ -163,29 +163,32 @@ export default function AboutPage() {
           <div className="text-center max-w-xl mx-auto mb-14 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider" style={{ color:"var(--color-primary)" }}>Our Guiding Principles</span>
             <h2 className="font-serif text-3xl sm:text-4xl font-extrabold" style={{ color:"var(--color-primary-dark)" }}>Why Families Trust Us</h2>
+            <p className="text-slate-600 mt-4 leading-relaxed">
+              Safe, compassionate, and specialised care for mothers and children — available when they need it most.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: ShieldCheck,
-                title:"Clinical Rigor",
-                desc:"Strict adherence to evidence-based medical protocols and safety standards.",
+                title: "Safe & Quality Care",
+                desc: "We follow proven medical practices and strong safety standards to provide reliable care.",
               },
               {
                 icon: HeartHandshake,
-                title:"Empathy First",
-                desc:"Treating mothers and babies with non-hurried, warm, human-centric dignity.",
+                title: "Compassionate Care",
+                desc: "We treat every mother, baby, and child with kindness, respect, and personal attention.",
               },
               {
                 icon: Award,
-                title:"Excellence in NICU",
-                desc:"Srikakulam's premier Level-III newborn intensive care setup.",
+                title: "Specialised Newborn Care",
+                desc: "Advanced Level-III NICU care for premature, low-birth-weight, and critically ill newborns.",
               },
               {
                 icon: Stethoscope,
-                title:"24/7 Availability",
-                desc:"Round-the-clock emergency obstetricians and pediatricians on site.",
+                title: "24/7 Medical Support",
+                desc: "Experienced obstetric and pediatric teams are available around the clock for urgent medical needs.",
               },
             ].map((v) => (
               <div key={v.title} className="card p-6 space-y-3 text-center sm:text-left">
