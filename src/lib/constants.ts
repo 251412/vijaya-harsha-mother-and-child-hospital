@@ -14,7 +14,7 @@ export const HOSPITAL_CONFIG = {
   emergencyPhone: process.env.EMERGENCY_PHONE || "+919990991868",
   emergencyPhoneFormatted: "+91 99909 91868",
   ambulancePhone: "+91 99909 91868",
-  whatsappNumber: process.env.WHATSAPP_NUMBER || "+919990991868",
+  whatsappNumber: process.env.WHATSAPP_NUMBER || "+919866627295",
   whatsappMessage: "Hello Vijaya Harsha Hospital, I would like to inquire about consultation and hospital services.",
   
   email: process.env.HOSPITAL_EMAIL || "info@vijayaharshahospital.com",

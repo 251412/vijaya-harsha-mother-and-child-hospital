@@ -110,7 +110,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased">
         <Navbar />
         <TransitionProvider>
-          <main className="flex-1 w-full pt-[130px] sm:pt-[140px]">{children}</main>
+          <main className="flex-1 w-full pt-[90px] sm:pt-[100px]">{children}</main>
         </TransitionProvider>
         <WhatsAppFloatingButton />
         <WelcomePopup />

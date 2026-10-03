@@ -70,7 +70,7 @@ export const DOCTORS: DoctorData[] = [
     name: "Dr.N.Vijaya Kumar",
     slug: "dr-n-vijaya-kumar",
     qualification: "M.D. – Paediatrics",
-    specialization: "Senior Pediatrician & Chief Neonatologist",
+    specialization: "Director & Consultant Paediatrician",
     department: "Pediatrics & Neonatal Care",
     experienceYears: 25,
     bio: "Dr. N. Vijaya Kumar is the Founder and Chief Pediatrician at Vijaya Harsha Mother & Child Hospital. With over 25 years of clinical excellence in Srikakulam and North Coastal Andhra Pradesh, he has spearheaded neonatal intensive care (NICU Level-III), reviving critically ill preterm newborns and guiding thousands of healthy children.",
@@ -85,7 +85,7 @@ export const DOCTORS: DoctorData[] = [
     name: "Dr. D. Harshavalli",
     slug: "dr-d-harshavalli",
     qualification: "M.D. (OBG), Obstetrics & Gynaecology",
-    specialization: "",
+    specialization: "Director & Consultant Obstetrician & Gynaecologist",
     department: "Obstetrics & Gynecology",
     experienceYears: 25,
     bio: "Dr. D. Harshavalli is renowned for compassionate, evidence-based maternity and women's health care. Specializing in high-risk obstetrics, painless natural labor, minimally invasive laparoscopic gynecological surgeries, and pre-conceptional counseling.",
@@ -100,7 +100,7 @@ export const DOCTORS: DoctorData[] = [
     name: "Dr. P. Anitha Devi",
     slug: "dr-p-anitha-devi",
     qualification: "DNB (OBG), FMAS, FRM",
-    specialization: "Fetal Medicine Specialist & High-Risk Pregnancy Consultant",
+    specialization: "Consultant Laparoscopic Surgeon",
     department: "Fetal Medicine & Antenatal Care",
     experienceYears: 6,
     bio: "Specializing in targeted anomaly scans, genetic screenings, amniocentesis, and intra-uterine fetal wellness monitoring. Dr. Anitha Devi ensures that unborn babies receive the earliest advanced diagnostics for optimal birth outcomes.",
@@ -109,21 +109,6 @@ export const DOCTORS: DoctorData[] = [
     consultationTimings: "10:00 AM - 01:30 PM",
     isAvailableForBooking: true,
     order: 3
-  },
-  {
-    id: "doc-4",
-    name: "Dr. B. Ramesh Varma",
-    slug: "dr-b-ramesh-varma",
-    qualification: "MBBS, MS (Gen Surg), M.Ch (Pediatric Surgery)",
-    specialization: "Consultant Pediatric & Neonatal Surgeon",
-    department: "Pediatric Surgery",
-    experienceYears: 16,
-    bio: "Dedicated to newborn congenital anomaly corrections, pediatric urology, and keyhole surgeries in infants and young children with microscopic precision and gentle post-operative pediatric recovery.",
-    photoUrl: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=800",
-    consultationDays: ["Tuesday", "Thursday", "Saturday"],
-    consultationTimings: "11:00 AM - 03:00 PM",
-    isAvailableForBooking: true,
-    order: 4
   }
 ];
 
@@ -148,17 +133,16 @@ export const SERVICES: ServiceData[] = [
   },
   {
     id: "srv-1",
-    title: "Maternity & Comprehensive Birthing Care",
+    title: "Maternity & Birthing Care",
     slug: "maternity-birthing-care",
     category: "Maternity",
-    shortDescription: "Compassionate antenatal care, painless normal deliveries, state-of-the-art labor delivery recovery suites (LDR), and emergency cesarean sections.",
-    fullDescription: "At Vijaya Harsha Hospital, childbirth is celebrated with the highest medical safety and familial warmth. Our multidisciplinary team provides complete pregnancy monitoring, non-stress testing (NST), epidural analgesia for painless normal deliveries, and round-the-clock emergency obstetric surgery suites ready within minutes.",
+    shortDescription: "Complete care for mothers from pregnancy to recovery, with safe delivery, personalised support, and continuous medical attention.",
+    fullDescription: "At Vijaya Harsha Hospital, our maternity team offers pregnancy monitoring, comfortable delivery care, mother-and-baby monitoring, and 24/7 emergency support — helping families feel safe and supported at every stage.",
     iconName: "Baby",
     benefits: [
-      "Modern Labor Delivery Recovery (LDR) private suites",
-      "Painless delivery with experienced in-house anesthetists",
-      "24/7 dedicated obstetric emergency theater",
-      "Continuous electronic fetal heart rate monitoring"
+      "Comfortable Delivery Rooms: Private rooms designed for a safe and comfortable delivery.",
+      "Painless Delivery Support: Pain-relief options to make labour more comfortable.",
+      "24/7 Emergency Care: Immediate medical support for mothers and babies, whenever needed."
     ],
     features: [
       "Advanced GE Healthcare ultrasound & Doppler",
@@ -173,14 +157,13 @@ export const SERVICES: ServiceData[] = [
     title: "Level-III Neonatal Intensive Care (NICU)",
     slug: "level-3-nicu",
     category: "Neonatology",
-    shortDescription: "Advanced life-support intensive care for premature, low birth weight, and critically ill newborns with 24/7 monitoring.",
-    fullDescription: "Our Level-III NICU is one of Srikakulam's foremost tertiary neonatal centers, equipped with servo-controlled incubators, high-frequency ventilators, LED phototherapy units, invasive arterial blood gas monitoring, and laminar airflow sterilization preventing neonatal infections.",
+    shortDescription: "Specialised newborn care with 24/7 monitoring and advanced medical support for premature, low-birth-weight, and critically ill babies.",
+    fullDescription: "Our Level-III NICU combines experienced neonatal care with modern equipment and continuous monitoring to provide a safe and supportive environment for newborns who need intensive care.",
     iconName: "ShieldAlert",
     benefits: [
-      "Care for extreme preterms born down to 26 weeks",
-      "Surfactant replacement therapy & nitric oxide support",
-      "Kangaroo Mother Care (KMC) dedicated wing",
-      "1:1 specialized neonatal nurse-to-baby ratio"
+      "Specialised Care for Premature Babies: Care for babies born very early or with low birth weight.",
+      "Advanced Newborn Support: Specialised treatment and breathing support for babies who need intensive care.",
+      "Kangaroo Mother Care (KMC): Dedicated support for skin-to-skin care and mother–baby bonding."
     ],
     features: [
       "GE Giraffe OmniBed hybrid warmers",
@@ -195,14 +178,13 @@ export const SERVICES: ServiceData[] = [
     title: "General & Advanced Pediatric Care",
     slug: "pediatric-care",
     category: "Pediatrics",
-    shortDescription: "Holistic child healthcare from birth through 18 years, including childhood infections, asthma, nutrition, and developmental milestones.",
-    fullDescription: "Led by Senior Pediatrician Dr.N.Vijaya Kumar, our pediatrics wing provides a warm, child-friendly environment designed to eliminate hospital anxiety. We manage acute pediatric emergencies, recurrent respiratory illnesses, allergies, and pediatric developmental assessments.",
+    shortDescription: "Complete Pediatric Care for Growing Children. We provide comprehensive healthcare for children from birth through 18 years, supporting their health, growth, development, and overall well-being.",
+    fullDescription: "At Vijaya Harsha Hospital, our pediatric team, led by Dr. N. Vijaya Kumar, provides child-friendly care in a comfortable environment.",
     iconName: "HeartHandshake",
     benefits: [
-      "Child-friendly examination rooms and play areas",
-      "Pediatric asthma and allergy management clinic",
-      "Growth tracking and developmental milestone screening",
-      "Childhood nutrition & adolescent health counseling"
+      "Child-Friendly Care: Comfortable and welcoming spaces designed especially for children.",
+      "Common Childhood Conditions: Care for infections, asthma, allergies, nutrition, and other childhood health needs.",
+      "Growth & Development Monitoring: Regular check-ups to track healthy growth and developmental milestones."
     ],
     features: [
       "Rapid point-of-care pediatric lab diagnostics",
@@ -211,72 +193,6 @@ export const SERVICES: ServiceData[] = [
     ],
     imageUrl: "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&q=80&w=1000",
     order: 3
-  },
-  {
-    id: "srv-4",
-    title: "High-Risk Pregnancy & Fetal Medicine",
-    slug: "high-risk-pregnancy",
-    category: "Maternity",
-    shortDescription: "Specialized clinical protocols for maternal hypertension, gestational diabetes, twins/triplets, and recurrent pregnancy loss.",
-    fullDescription: "High-risk pregnancies require experienced vigilance. Dr. D. Harshavalli and Dr. P. Anitha Devi work closely to detect maternal and fetal complications early, implementing personalized management plans that safely bring both mother and baby through delivery.",
-    iconName: "Activity",
-    benefits: [
-      "Comprehensive screening for preeclampsia and gestational diabetes",
-      "First-trimester NT/NB screening and Quadruple marker analysis",
-      "High-resolution targeted anomaly scans (TIFFA)",
-      "Continuous fetal biophysical profile (BPP) assessments"
-    ],
-    features: [
-      "Voluson E10 High-definition 4D ultrasound",
-      "Cardiotocography (CTG) real-time telemetry",
-      "Blood bank access & intensive maternal monitoring"
-    ],
-    imageUrl: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1000",
-    order: 4
-  },
-  {
-    id: "srv-5",
-    title: "Pediatric Surgery & Minimally Invasive Laparoscopy",
-    slug: "pediatric-surgery",
-    category: "Surgery",
-    shortDescription: "Microscopic and laparoscopic surgical interventions for pediatric hernias, appendicitis, and congenital anomalies with minimal pain.",
-    fullDescription: "Our pediatric surgical team delivers gentle surgical interventions with child-sized instruments, specialized pediatric anesthesia, and rapid recovery times so children can return home swiftly to their families.",
-    iconName: "Syringe",
-    benefits: [
-      "Minimally invasive keyhole surgeries for tiny scars",
-      "Congenital malformation repairs for newborns",
-      "Dedicated pediatric post-operative recovery unit",
-      "Child-friendly anesthesia protocols reducing trauma"
-    ],
-    features: [
-      "Karl Storz HD Pediatric Laparoscopy System",
-      "Ultra-sterile modular laminar air flow operating suite",
-      "24/7 emergency trauma surgical coverage"
-    ],
-    imageUrl: "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=1000",
-    order: 5
-  },
-  {
-    id: "srv-6",
-    title: "Childhood Immunization & Preventive Care",
-    slug: "immunization-vaccination",
-    category: "Preventive",
-    shortDescription: "Complete WHO & IAP recommended vaccination schedule maintained under strict cold-chain temperature monitoring.",
-    fullDescription: "Immunization is the cornerstone of child wellness. Vijaya Harsha Hospital maintains the highest cold-chain standards for all childhood and adolescent vaccines, offering personalized vaccine schedules, painless needle techniques, and digital reminders.",
-    iconName: "ShieldCheck",
-    benefits: [
-      "100% unbroken cold-chain monitored storage (2°C to 8°C)",
-      "Painless vaccination options available",
-      "Digital immunization records and reminder alerts",
-      "Counseling on optional & travel vaccines"
-    ],
-    features: [
-      "Medical-grade backup power refrigerators",
-      "WHO & Indian Academy of Pediatrics (IAP) certified schedule",
-      "Catch-up vaccination planning for missed doses"
-    ],
-    imageUrl: "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80&w=1000",
-    order: 6
   }
 ];
 
@@ -287,7 +203,7 @@ export const BLOG_POSTS: BlogPostData[] = [
     slug: "warning-signs-during-pregnancy",
     category: "Pregnancy Care",
     authorName: "Dr. D. Harshavalli",
-    authorRole: "Obstetrics & Gynaecology",
+    authorRole: "Director & Consultant Obstetrician & Gynaecologist",
     publishedAt: "March 15, 2026",
     readTime: "5 min read",
     excerpt: "Learn the crucial symptoms during pregnancy—such as persistent headaches, sudden swelling, or reduced fetal movement—that require prompt medical evaluation.",
@@ -318,7 +234,7 @@ Our obstetric emergency unit is staffed 24 hours a day with obstetricians, emerg
     slug: "understanding-newborn-jaundice",
     category: "Newborn Care",
     authorName: "Dr.N.Vijaya Kumar",
-    authorRole: "Senior Pediatrician & Chief Neonatologist",
+    authorRole: "Director & Consultant Paediatrician",
     publishedAt: "March 08, 2026",
     readTime: "6 min read",
     excerpt: "Newborn jaundice affects over 60% of healthy infants. Discover how bilirubin levels are measured, the safety of modern phototherapy, and feeding advice.",
@@ -347,7 +263,7 @@ When bilirubin exceeds safe thresholds, our Level-III NICU utilizes specialized 
     slug: "childhood-vaccination-schedule-guide",
     category: "Immunization",
     authorName: "Dr.N.Vijaya Kumar",
-    authorRole: "Senior Pediatrician & Chief Neonatologist",
+    authorRole: "Director & Consultant Paediatrician",
     publishedAt: "February 22, 2026",
     readTime: "4 min read",
     excerpt: "A comprehensive breakdown of key childhood immunizations from birth to age 5, explaining herd immunity, cold-chain safety, and painless vaccines.",
