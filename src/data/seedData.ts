@@ -103,7 +103,7 @@ export const DOCTORS: DoctorData[] = [
     specialization: "Consultant Laparoscopic Surgeon",
     department: "Fetal Medicine & Antenatal Care",
     experienceYears: 6,
-    bio: "Specializing in targeted anomaly scans, genetic screenings, amniocentesis, and intra-uterine fetal wellness monitoring. Dr. Anitha Devi ensures that unborn babies receive the earliest advanced diagnostics for optimal birth outcomes.",
+    bio: "Gynecologist with 6 years experience and renowned for normal deliveries, painless deliveries, all gynecological surgeries including laparoscopic method, fertility specialist and she is certified menopause practitioner.",
     photoUrl: "/images/Dr. P. Anitha Devi.png",
     consultationDays: ["Monday", "Wednesday", "Friday", "Saturday"],
     consultationTimings: "10:00 AM - 01:30 PM",
